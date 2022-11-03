@@ -4,21 +4,31 @@
     <Title>Gamhub | Home</Title>
     <meta name="description" content="This is a website showcasing their guitars">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&family=Ubuntu&display=swap" rel="stylesheet">
+
     <script src="https://kit.fontawesome.com/92d151df5b.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
-    <header>
-        <a href="index.html"><img src="images/GameHub_logo.png" alt="Gamehub Logo"></a>
-        <form action="submit.php" method="get"></form>
-            <input type="text" name="search" id="search" placeholder="Search games">
-        <Nav>
-            <a href="account.html">Account</a>
-            <a href="wishlist.html">Wishlist</a>
-            <a href="cart.html">Cart</a>
-        </Nav>
+    <header class="header">
+        <section class="header__content">
+            <a href="index.html"><img src="images/GameHub_logo.png" alt="Gamehub Logo" class="logo"></a>
+            <div>
+                <form action="submit.php" method="get"></form>
+                <input type="text" name="search" id="search" placeholder="Search games">
+            </div>
+            <Nav>
+                <a href="account.html">Account</a>
+                <a href="wishlist.html">Wishlist</a>
+                <a href="cart.html">Cart</a>
+            </Nav>
+        </section>
     </header>
     <main>
-        <Section>
+        <Section class="platforms">
             <a href="nintendo.html">Nintendo</a>
             <a href="playstation.html">Playstation</a>
             <a href="playbox.html">Playbox</a>
@@ -28,10 +38,17 @@
         </Section>
         <section>
             <h1>NEW ARRIVALS</h1>
-            <img src="images/Poster_new-arrivals.jpg" alt="Poster of new game arrivals">
+            <div class="slider">
+                <div class="slide">
+                    <img src="images/GameHub_covers9.jpg" alt="Cyberpunk 2024 New game poster" id="slide-1">
+                </div>
+                <div class="slide">
+                    <img src="images/GameHub_covers10.jpg" alt="Forge Legend New game poster" id="slide-2">
+                </div>
+            </div>
             <i class="fa-solid fa-ellipsis"></i>
         </section>
-        <section>
+        <section class="featured">
             <div>
                 <img src="images/Poster_price-drops.png" alt="Poster signaling price drops on games">
             </div>
@@ -74,3 +91,5 @@
     </footer>
 </body>
 </html>
+
+

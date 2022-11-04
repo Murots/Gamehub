@@ -3,8 +3,25 @@ body {
     font-family: 'Source Sans Pro', sans-serif, Verdana, Geneva, Tahoma;
     font-size: 0.85em;
     margin: 0px;
+    min-height: 100vh;
     display: grid;
     grid-template-rows: auto 1fr auto;
+}
+
+h1,
+h2 {
+    font-family: 'Ubuntu', sans-serif, Verdana, Geneva, Tahoma;
+}
+
+h1 {
+    font-size: 1.6em;
+    color: #FC67B8;
+    margin: 50px 0px 10px 0px;
+}
+
+h2 {
+    font-size: 2.7em;
+    margin: 0;
 }
 
 .header {
@@ -16,7 +33,12 @@ body {
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     max-width: 1000px;
-    margin: 20px auto;
+    margin: 0px auto;
+}
+
+main {
+    max-width: 1000px;
+    margin: auto;
 }
 
 nav {
@@ -36,7 +58,7 @@ header div {
 }
 
 /* Links
-------------------------------------------------------------- */
+-------------------------------------------------------------------------------------------------- */
 
 .logo {
     margin-left: -15px;
@@ -50,7 +72,7 @@ nav a {
 
 .platforms a {
     font-family: 'Ubuntu', sans-serif, Verdana, Geneva, Tahoma;
-    font-size: 1em;
+    font-size: 1.3em;
     text-align: center;
     color: #1B203D;
     text-decoration: none;
@@ -58,41 +80,85 @@ nav a {
     border-color: #FC67B8;
     border-radius: 25px;
     border-width: 3px;
-    padding-top: 13px;
-    padding-bottom: 13px;
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 
 
 /* Home Page
--------------------------------------------------------------- */
+--------------------------------------------------------------------------------------------------- */
 
 .slider {
     max-width: 1000px;
-    margin: 50px auto;
     max-height: 454px;
     display: flex;
     overflow-x: auto;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;  
 }
 
-.slide > * {
-    height: 425px;
+.slide-one,
+.slide-two {
     width: 1000px;
-    object-fit: cover;
+    flex-shrink: 0;
+    height: 425px;
+    margin-bottom: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    scroll-snap-align: start;
+    scroll-behavior: smooth;
 }
 
-#slide-1 {
-    object-position: 100% 27%;
+.slide-one {
+    background-image: url(../images/GameHub_covers9.jpg);
+    background-position-y: 27%;
 }
 
-#slide-2 {
-    object-position: 100% 45%;
+.slide-two {
+    background-image: url(../images/GameHub_covers10.jpg);
+    background-position-y: 44%;
 }
+
+.slider h2 {
+    position: absolute;
+    color: #fff;
+}
+
+.slide-one h2 {
+    left: 3%; 
+    bottom: 7%;
+}
+
+.slide-two h2 {
+    left: 103%; 
+    bottom: 7%;
+    width:300px;
+}
+
+.slider::-webkit-scrollbar {
+    height: 10px;
+}
+
+.slider::-webkit-scrollbar-track {
+    background: #E8E8E8; 
+    border-radius: 10px;
+    margin-top: 5px;
+  }
+
+.slider::-webkit-scrollbar-thumb {
+    background-color: #7E7E7E;
+    border-radius: 10px;
+}
+
+
 
 .featured {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 50px auto;
     grid-gap: 20px;
 }
 

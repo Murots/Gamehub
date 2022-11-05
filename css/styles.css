@@ -1,7 +1,6 @@
 
 body {
     font-family: 'Source Sans Pro', sans-serif, Verdana, Geneva, Tahoma;
-    font-size: 0.85em;
     margin: 0px;
     min-height: 100vh;
     display: grid;
@@ -14,13 +13,8 @@ h2 {
 }
 
 h1 {
-    font-size: 1.6em;
+    font-size: 1.5em;
     color: #FC67B8;
-    margin: 50px 0px 10px 0px;
-}
-
-h2 {
-    font-size: 2.7em;
     margin: 0;
 }
 
@@ -53,9 +47,37 @@ header div {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     max-width: 960px;
-    margin: 20px auto;
+    margin: 20px auto 50px auto;
     grid-gap: 30px;
 }
+
+footer {
+    background-color: #1B203D;
+    color: #fff;
+}
+
+.newsletter {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    max-width: 1000px;
+    margin: 0px auto;
+}
+
+.support {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    max-width: 1000px;
+    margin: 0px auto;
+}
+
+footer ul {
+    list-style: none;
+    text-align: left;
+}
+
+
 
 /* Links
 -------------------------------------------------------------------------------------------------- */
@@ -64,18 +86,26 @@ header div {
     margin-left: -15px;
 }
 
-nav a {
+a {
+    text-decoration: none;
+}
+
+header nav a {
+    font-size: 1em;
     color: #fff;
     padding: 10px;
-    text-decoration: none;
+}
+
+footer a {
+    font-size: 1em;
+    color: #fff;
 }
 
 .platforms a {
     font-family: 'Ubuntu', sans-serif, Verdana, Geneva, Tahoma;
-    font-size: 1.3em;
+    font-size: 1.2em;
     text-align: center;
     color: #1B203D;
-    text-decoration: none;
     border-style: solid;
     border-color: #FC67B8;
     border-radius: 25px;
@@ -91,6 +121,7 @@ nav a {
 .slider {
     max-width: 1000px;
     max-height: 454px;
+    margin-top: 10px;
     display: flex;
     overflow-x: auto;
     position: relative;
@@ -121,20 +152,55 @@ nav a {
     background-position-y: 44%;
 }
 
+.slider::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: -1000px;
+    bottom: 0px;
+    left: 0px;
+    margin-bottom: 5px;
+    background-color: rgba(0,0,0,0.33);
+}
+
 .slider h2 {
+    font-size: 2.2em;
     position: absolute;
     color: #fff;
 }
 
+.slider p {
+    position: absolute;
+    background-color: #45EDC9;
+    padding: 12px 60px;
+    border-radius: 25px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #1B203D;
+}
+
 .slide-one h2 {
     left: 3%; 
-    bottom: 7%;
+    margin: 0;
+    bottom: 6%;
 }
 
 .slide-two h2 {
-    left: 103%; 
-    bottom: 7%;
     width:300px;
+    left: 103%; 
+    margin: 0;
+    bottom: 6%;
+}
+
+.slide-one p {
+    left: 77%;
+    bottom: 3%;
+}
+
+.slide-two p {
+    left: 177%;
+    bottom: 3%;
+    width: 80.625px;
 }
 
 .slider::-webkit-scrollbar {
@@ -152,16 +218,44 @@ nav a {
     border-radius: 10px;
 }
 
-
-
 .featured {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     max-width: 1000px;
+    height: 150px;
     margin: 50px auto;
     grid-gap: 20px;
 }
 
-.featured img {
-    width: 100%;
+.featured__price-drops {
+    background-image: url(../images/Poster_price-drops.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+}
+
+.featured__daily-deals {
+    background-image: url(../images/Poster_daily-deals.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+}
+
+.featured__trade-in {
+    background-image: url(../images/Poster_trade-in.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+}
+
+.featured h1 {
+    color: #fff;
+    margin: 25px 0px 0px 10px;
+}
+
+.featured p {
+    font-size: 1em;
+    color: #45EDC9;
+    margin: 0px 0px 0px 10px;
+    bottom: 60%;
 }

@@ -35,12 +35,12 @@ main {
     margin: auto;
 }
 
-nav {
-    text-align: right;
-}
-
 header div {
     text-align: center;
+}
+
+nav {
+    text-align: right;
 }
 
 .platforms {
@@ -64,14 +64,32 @@ footer {
     margin: 0px auto;
 }
 
-.pcap {
-    font-family: 'Ubuntu', sans-serif, Verdana, Geneva, Tahoma;
-    font-size: 1.75em;
-    font-weight: bold;
+.newsletter__form {
+    display: grid;
+    max-width: 420px;
+    padding: 20px;
+    background-color: #fff;
+    margin: 50px 0px 50px 100px;
 }
 
-.preg {
-    font-size: 1em;
+.newsletter__form input {
+    height: 35px;
+    margin: 5px;
+}
+
+.newsletter h3 {
+    font-family: 'Ubuntu', sans-serif, Verdana, Geneva, Tahoma;
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+footer p {
+    font-size: 0.875em;
+}
+
+.newsletter p {
+    margin-top: 5px;
 }
 
 .support {
@@ -79,16 +97,33 @@ footer {
     grid-template-columns: repeat(5, 1fr);
     align-items: center;
     max-width: 1000px;
-    margin: 0px auto;
+    margin: 50px auto;
+    
 }
 
-footer ul {
+.connect {
+    height: 100%;
+    width: 250px;
+}
+
+.connect img {
+    margin-right: 20px;
+}
+
+.support ul {
     list-style: none;
     text-align: left;
+
 }
 
-footer nav {
+.support nav {
     grid-column: 5;
+}
+
+.copyright p {
+    max-width: 1000px;
+    margin: auto;
+    font-size: 0.8em;
 }
 
 /* Links
@@ -105,7 +140,43 @@ a {
 header nav a {
     font-size: 1em;
     color: #fff;
-    padding: 10px;
+}
+
+.nav-account {
+    background: url(../icons/Account.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: top;
+    padding: 22px 0px 0px 0px;
+    margin: 0px 15px;
+}
+
+.navigation {
+    margin-top: 22px;
+}
+.nav-wishlist {
+    background: url(../icons/Hearth.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: top;
+    padding: 22px 0px 0px 0px;
+    margin: 0px 15px;
+}
+
+.nav-cart {
+    background: url(../icons/Cart.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: top;
+    padding: 22px 0px 0px 0px;
+    margin-left: 15px;
+    margin-right: 0px;
+}
+
+.nav-account,
+.nav-wishlist,
+.nav-cart {
+    color: #fff;
 }
 
 footer a {
@@ -126,6 +197,13 @@ footer a {
     padding-bottom: 12px;
 }
 
+.cta-large {
+    background-color: #45EDC9;
+    border-style: none;
+    font-size: 1em;
+    font-weight: bold;
+    color: #1B203D;
+}
 
 /* Home Page
 --------------------------------------------------------------------------------------------------- */

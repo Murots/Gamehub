@@ -30,17 +30,37 @@ h1 {
     margin: 0px auto;
 }
 
-main {
-    max-width: 1000px;
-    margin: auto;
-}
-
 header div {
     text-align: center;
 }
 
 nav {
     text-align: right;
+}
+
+.search-field {
+    width: 466px;
+    height: 40px;
+    border-radius: 25px;
+    border-style: none;
+}
+
+.search-bar i {
+    position: absolute;
+    margin-left: 430px;
+    margin-top: 6px;
+    background-color: #45EDC9;
+    border-radius: 50px;
+    padding: 7px;   
+}
+
+.search-bar i:hover {
+    background-color: #3bd6b5;
+}
+
+main {
+    max-width: 1000px;
+    margin: auto;
 }
 
 .platforms {
@@ -126,6 +146,36 @@ footer p {
     font-size: 0.8em;
 }
 
+.mapline-hrtop {
+    margin-top: 20px;
+    width: 1000px;
+}
+
+.mapline {
+    display: flex;
+    margin: 12px 0px;
+    font-size: 0.875em;
+}
+
+.mapline__links {
+    display: inline;
+}
+
+.mapline__links > * {
+    margin-left: 5px;
+    color: #1B203D;
+}
+
+.mapline p {
+    margin: 0px 5px 0px 0px;
+    color: #5900A8;
+}
+
+.no-games {
+    margin-top: 30px;
+    margin-bottom: 350px;
+}
+
 /* Links
 -------------------------------------------------------------------------------------------------- */
 
@@ -200,12 +250,13 @@ footer a {
 
 .cta {
     background-color: #FC67B8;
+    color: #fff;
     text-align: center;
     max-width: 198px;
-    height: 30px;
     grid-column: -1/1;
     margin-left: -23px;
     margin-right: -23px;
+    padding: 10px 0px;
 }
 
 .cta-large {
@@ -220,7 +271,7 @@ footer a {
 --------------------------------------------------------------------------------------------------- */
 
 .slider-heading {
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .slider {
@@ -374,29 +425,8 @@ footer a {
 /* Playbox
 --------------------------------------------------------------------------------------------------- */
 
-.mapline-hrtop {
-    margin-top: 20px;
-    width: 1000px;
-}
-
-.mapline {
-    display: flex;
-    margin: 12px 0px;
-    font-size: 0.875em;
-}
-
-.mapline__links {
-    display: inline;
-}
-
-.mapline__links > * {
-    margin-left: 5px;
-    color: #1B203D;
-}
-
-.mapline p {
-    margin: 0px 5px 0px 0px;
-    color: #5900A8;
+.playbox-heading {
+    margin-top: 30px;
 }
 
 .game-selection {
@@ -414,6 +444,10 @@ footer a {
     border-style: solid;
     border-color: #E8E8E8;
     border-width: 0.5px;
+    background-image: url(../icons/Hearth_gray.png);
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: 3%;
 }
 
 .game-selection__specific img {
@@ -427,6 +461,7 @@ footer a {
     font-family: 'Ubuntu', sans-serif, Verdana, Geneva, Tahoma;
     font-size: 1em;
     margin-top: 20px;
+    margin-bottom: 0px;
 }
 
 .specific__price {
@@ -436,9 +471,10 @@ footer a {
 
 .specific__title {
     margin-left: -23px;
+    width: 120px;
 }
 
 .game-selection p {
     color: #7E7E7E;
-    margin-left: -23px;
+    margin: 5px 0px 20px -23px;
 }

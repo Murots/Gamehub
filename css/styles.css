@@ -269,6 +269,7 @@ footer a {
     background-color: #45EDC9;
     border-style: none;
     font-size: 1em;
+    max-height: 40px;
     font-weight: bold;
     color: #1B203D;
 }
@@ -459,8 +460,6 @@ footer a {
     margin: 0px 0px 0px 10px;
 }
 
-
-
 .game-selection {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -508,10 +507,6 @@ footer a {
     margin: 5px 0px 20px -23px;
 }
 
-.discount > * {
-    display: inline;
-}
-
 .page-view {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -527,4 +522,86 @@ footer a {
 
 .pv-next {
     text-align: right;
+}
+
+/* Product pages
+--------------------------------------------------------------------------------------------------- */
+
+.selected-game {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+}
+
+.selected-game__images {
+    margin: 50px 45px 20px 20px;
+}
+
+.selected-game_cover {
+    max-width: 100%;
+}
+ 
+.selected-game__details {
+    min-width: 460px;
+    margin: 50px 20px 20px 45px;
+}
+
+.selected-game__details h3 {
+    color: #1B203D;  
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.selected-game__details h4 {
+    margin: 5px 0px 20px 0px;
+    color: #7E7E7E;
+    font-weight: 200;
+}
+
+.selected-game__details p {
+    color: #1B203D;
+}
+
+.details_description {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.details_genre {
+    margin-top: 45px;
+    margin-bottom: 20px;
+}
+
+.details_decision {
+    display: grid;
+    margin-top: 70px;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    grid-gap: 45px;
+}
+
+.details_decision p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.details_cta {
+    text-align: center;
+    padding: 12px 0px;
+}
+
+.selected-game_thumbnails {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.selected-game_thumbnails > * {
+    padding: 10px 20px;
+    border-style: solid;
+    border-color: #E8E8E8;
+}
+
+.heading-viewed {
+    margin-top: 50px;
 }

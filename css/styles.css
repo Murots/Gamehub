@@ -1,0 +1,628 @@
+
+body {
+    font-family: 'Source Sans Pro', sans-serif, Verdana, Geneva, Tahoma;
+    margin: 0px;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Ubuntu', sans-serif, Verdana, Geneva, Tahoma;
+}
+
+h1 {
+    font-size: 1.5em;
+    color: #FC67B8;
+    margin: 0;
+}
+
+h4 {
+    color: #1B203D;
+    font-size: 1em;
+}
+
+.header {
+    background: linear-gradient(#5900A8, #FC67B8);
+}
+
+.header__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    max-width: 1000px;
+    margin: 0px auto;
+}
+
+header div {
+    text-align: center;
+}
+
+nav {
+    text-align: right;
+}
+
+.search-field {
+    width: 466px;
+    height: 40px;
+    border-radius: 25px;
+    border-style: none;
+}
+
+.search-bar i {
+    position: absolute;
+    margin-left: 430px;
+    margin-top: 6px;
+    background-color: #45EDC9;
+    border-radius: 50px;
+    padding: 7px;   
+}
+
+.search-bar i:hover {
+    background-color: #3bd6b5;
+}
+
+main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.platforms {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    max-width: 960px;
+    margin: 20px auto 0px auto;
+    grid-gap: 30px;
+}
+
+footer {
+    background-color: #1B203D;
+    color: #fff;
+}
+
+.newsletter {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    max-width: 1000px;
+    margin: 0px auto;
+}
+
+.newsletter__form {
+    display: grid;
+    max-width: 420px;
+    padding: 20px;
+    background-color: #fff;
+    margin: 50px 0px 50px 100px;
+}
+
+.newsletter__form input {
+    height: 35px;
+    margin: 5px;
+}
+
+.newsletter h3 {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+footer p {
+    font-size: 0.875em;
+}
+
+.newsletter p {
+    margin-top: 5px;
+}
+
+.support {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+.connect {
+    height: 100%;
+    width: 250px;
+}
+
+.connect img {
+    margin-right: 20px;
+}
+
+.support ul {
+    list-style: none;
+    text-align: left;
+
+}
+
+.support nav {
+    grid-column: 5;
+}
+
+.copyright p {
+    max-width: 1000px;
+    margin: auto;
+    font-size: 0.8em;
+}
+
+.mapline-hrtop {
+    margin-top: 20px;
+    width: 1000px;
+}
+
+.mapline {
+    display: flex;
+    margin: 12px 0px;
+    font-size: 0.875em;
+}
+
+.mapline__links {
+    display: inline;
+}
+
+.mapline__links > * {
+    margin-left: 5px;
+    color: #1B203D;
+}
+
+.mapline p {
+    margin: 0px 5px 0px 0px;
+    color: #5900A8;
+    font-weight: bold;
+}
+
+.no-games {
+    margin-top: 30px;
+    margin-bottom: 400px;
+}
+
+.catalogue-heading {
+    margin-top: 30px;
+}
+
+
+/* Links
+-------------------------------------------------------------------------------------------------- */
+
+.logo {
+    margin-left: -15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+header nav a {
+    font-size: 1em;
+    color: #fff;
+}
+
+.navigation {
+    margin-top: 22px;
+}
+
+.nav-account {
+    background: url(../icons/Account.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: top;
+    padding: 22px 0px 0px 0px;
+    margin: 0px 15px;
+}
+
+.nav-wishlist {
+    background: url(../icons/Hearth.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: top;
+    padding: 22px 0px 0px 0px;
+    margin: 0px 15px;
+}
+
+.nav-cart {
+    background: url(../icons/Cart.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: top;
+    padding: 22px 0px 0px 0px;
+    margin-left: 15px;
+    margin-right: 0px;
+}
+
+.nav-account,
+.nav-wishlist,
+.nav-cart {
+    color: #fff;
+}
+
+footer a {
+    font-size: 1em;
+    color: #fff;
+}
+
+.platforms a {
+    font-family: 'Ubuntu', sans-serif, Verdana, Geneva, Tahoma;
+    font-size: 1.15em;
+    text-align: center;
+    color: #1B203D;
+    border-style: solid;
+    border-color: #FC67B8;
+    border-radius: 25px;
+    border-width: 3px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.cta {
+    background-color: #FC67B8;
+    color: #fff;
+    text-align: center;
+    max-width: 198px;
+    grid-column: -1/1;
+    margin-left: -23px;
+    margin-right: -23px;
+    padding: 10px 0px;
+}
+
+.cta-large {
+    background-color: #45EDC9;
+    border-style: none;
+    font-size: 1em;
+    max-height: 40px;
+    font-weight: bold;
+    color: #1B203D;
+}
+
+
+/* Home Page
+--------------------------------------------------------------------------------------------------- */
+
+.slider-heading {
+    margin-top: 30px;
+}
+
+.slider {
+    max-width: 1000px;
+    max-height: 454px;
+    margin-top: 10px;
+    display: flex;
+    overflow-x: auto;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;  
+}
+
+.slide-one,
+.slide-two {
+    width: 1000px;
+    flex-shrink: 0;
+    height: 425px;
+    margin-bottom: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    scroll-snap-align: start;
+    scroll-behavior: smooth;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.slide-one {
+    background-image: url(../images/GameHub_covers9.jpg);
+    background-position-y: 27%;
+}
+
+.slide-two {
+    background-image: url(../images/GameHub_covers10.jpg);
+    background-position-y: 44%;
+}
+
+.slider::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: -1000px;
+    bottom: 0px;
+    left: 0px;
+    margin-bottom: 5px;
+    background-color: rgba(0,0,0,0.33);
+}
+
+.slider h2 {
+    font-size: 2.2em;
+    position: relative;
+    color: #fff;
+    width: 300px;
+}
+
+.slider a {
+    position: relative;
+    background-color: #45EDC9;
+    height: 20px;
+    width: 80px;
+    padding: 12px 60px;
+    border-radius: 25px;
+}
+
+.slide-one h2 {
+    grid-column: 1;
+    grid-row: 4;
+    margin: 40px 0px 0px 22px;
+}
+
+.slide-two h2 {
+    grid-column: 1;
+    grid-row: 4;
+    margin: 40px 0px 0px 22px;
+}
+
+.slide-one a {
+    grid-column: 4;
+    grid-row: 4;
+    margin: 35px 0px 20px 0px;
+}
+
+.slide-two a {
+    grid-column: 4;
+    grid-row: 4;
+    margin: 35px 0px 20px 0px;
+}
+
+.slider::-webkit-scrollbar {
+    height: 10px;
+}
+
+.slider::-webkit-scrollbar-track {
+    background: #E8E8E8; 
+    border-radius: 10px;
+    margin-top: 5px;
+  }
+
+.slider::-webkit-scrollbar-thumb {
+    background-color: #7E7E7E;
+    border-radius: 10px;
+}
+
+.featured {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1000px;
+    height: 150px;
+    margin: 50px auto;
+    grid-gap: 20px;
+}
+
+.featured__price-drops {
+    background-image: url(../images/Poster_price-drops.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+}
+
+.featured__daily-deals {
+    background-image: url(../images/Poster_daily-deals.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+}
+
+.featured__trade-in {
+    background-image: url(../images/Poster_trade-in.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+}
+
+.featured h1 {
+    color: #fff;
+    margin: 25px 0px 0px 10px;
+}
+
+.featured p {
+    font-size: 1em;
+    color: #45EDC9;
+    margin: 0px 0px 0px 10px;
+    bottom: 60%;
+}
+
+/* Playbox  (and Price Drops)
+--------------------------------------------------------------------------------------------------- */
+
+.options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1000px;
+    margin-top: 20px;
+}
+
+.options__filters,
+.options__sort {
+    display: flex; 
+    color: #1B203D;
+    font-size: 0.9em;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #5900A8;
+    padding: 5px;
+    max-width: 156px;
+}
+
+.options__sort {
+    justify-self: end;
+    width: 156px;
+}
+.options p {
+    margin: 0px 0px 0px 10px;
+}
+
+.game-selection {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 35px;
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+.game-selection__specific {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 43px 35px 10px 35px;
+    border-style: solid;
+    border-color: #E8E8E8;
+    border-width: 0.5px;
+    background-image: url(../icons/Hearth_gray.png);
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: 3%;
+}
+
+.game-selection__specific img {
+    width: 100%;
+    height: 201px;
+    grid-column: -1/1;
+}
+
+.game-selection__specific h4 {
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.specific__price {
+    text-align: right;
+    margin-right: -23px;
+}
+
+.specific__title {
+    margin-left: -23px;
+    width: 120px;
+}
+
+.game-selection p {
+    color: #7E7E7E;
+    margin: 5px 0px 20px -23px;
+}
+
+.page-view {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1000px;
+    color: #E8E8E8;
+    margin-bottom: 20px;
+}
+
+.pv-count {
+    text-align: center;
+    color: #1B203D;
+}
+
+.pv-next {
+    text-align: right;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+/* Product pages
+--------------------------------------------------------------------------------------------------- */
+
+.selected-game {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+}
+
+.selected-game__images {
+    margin: 50px 45px 20px 20px;
+}
+
+.selected-game__images img {
+    max-width: 100%;
+}
+ 
+.selected-game__details {
+    min-width: 460px;
+    margin: 50px 20px 20px 45px;
+}
+
+.selected-game__details h3 {
+    color: #1B203D;  
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.selected-game__details h4 {
+    margin: 5px 0px 20px 0px;
+    color: #7E7E7E;
+    font-weight: 200;
+}
+
+.selected-game__details p {
+    color: #1B203D;
+}
+
+.details_description {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.details_genre {
+    margin-top: 45px;
+    margin-bottom: 20px;
+}
+
+.details_decision {
+    display: grid;
+    margin-top: 70px;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    grid-gap: 45px;
+}
+
+.details_decision p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.details_cta {
+    text-align: center;
+    padding: 12px 0px;
+}
+
+.selected-game_thumbnails {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.selected-game_thumbnails > * {
+    padding: 10px 20px;
+    border-style: solid;
+    border-color: #E8E8E8;
+}
+
+.heading-viewed {
+    margin-top: 50px;
+}
+
+
+/* Trade In
+--------------------------------------------------------------------------------------------------- */
+
+.trade-margin {
+    margin-bottom: 310px;
+}
+
+.trade-info span {
+    color: #5900A8;
+    font-style: italic;
+    font-weight: bold;
+}

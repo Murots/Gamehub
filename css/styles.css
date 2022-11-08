@@ -175,12 +175,18 @@ footer p {
 .mapline p {
     margin: 0px 5px 0px 0px;
     color: #5900A8;
+    font-weight: bold;
 }
 
 .no-games {
     margin-top: 30px;
-    margin-bottom: 350px;
+    margin-bottom: 400px;
 }
+
+.catalogue-heading {
+    margin-top: 30px;
+}
+
 
 /* Links
 -------------------------------------------------------------------------------------------------- */
@@ -273,6 +279,7 @@ footer a {
     font-weight: bold;
     color: #1B203D;
 }
+
 
 /* Home Page
 --------------------------------------------------------------------------------------------------- */
@@ -426,12 +433,8 @@ footer a {
     bottom: 60%;
 }
 
-/* Playbox
+/* Playbox  (and Price Drops)
 --------------------------------------------------------------------------------------------------- */
-
-.playbox-heading {
-    margin-top: 30px;
-}
 
 .options {
     display: grid;
@@ -524,6 +527,10 @@ footer a {
     text-align: right;
 }
 
+.hidden {
+    visibility: hidden;
+}
+
 /* Product pages
 --------------------------------------------------------------------------------------------------- */
 
@@ -536,7 +543,7 @@ footer a {
     margin: 50px 45px 20px 20px;
 }
 
-.selected-game_cover {
+.selected-game__images img {
     max-width: 100%;
 }
  
@@ -604,4 +611,18 @@ footer a {
 
 .heading-viewed {
     margin-top: 50px;
+}
+
+
+/* Trade In
+--------------------------------------------------------------------------------------------------- */
+
+.trade-margin {
+    margin-bottom: 310px;
+}
+
+.trade-info span {
+    color: #5900A8;
+    font-style: italic;
+    font-weight: bold;
 }

@@ -626,3 +626,20 @@ footer a {
     font-style: italic;
     font-weight: bold;
 }
+
+
+/* Shopping Cart
+--------------------------------------------------------------------------------------------------- */
+
+.cart-heading {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.cart-heading h1 {
+    margin: 0px;
+    
+}
+

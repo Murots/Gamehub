@@ -840,15 +840,14 @@ footer a {
 }
 
 .contact-cta {
-    margin: 25px auto 0px auto;
+    margin: 25px auto 0px 25%; 
     width: 207px;
     height: 40px;
 }
 
-.contact_wrapper p {
+.contact-note {
     font-size: 0.875em;
-    height: 100%;
-    
+    margin: auto 0px 60px 0px; 
 }
 
 /* About Us

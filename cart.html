@@ -33,21 +33,79 @@
                 <a href="index.html">Continue Shopping</a>
             </div>
         </section>
-        <hr color="#E1E1E1" size="0.5px">
+        <hr class="hr">
         <section class="cart-heading">
-            <div>
-                <img src="icons/Cart_pink.png" alt="Cart-icon">
-            <h1 class="catalogue-heading cart-h"><span style="color: #1B203D;">SHOPPING CART</span></h1>  
-            </div>
-            <img src="images/GameHub_covers9.jpg" alt="Cover Art Cyberpunk">
-            <h4>Cyberpunk 2048 - Playbox</h4>
-            <p>Used - Cartrige and cover included</p>
-            <p><span style="color: #5900A8; font-weight: bold;">In stock</span> - Ships within 24 hours</p>
-            <p>Qty 1</p>
-            <h4>€ 45</h4>
-
+            <img src="icons/Cart_pink.png" alt="Cart-icon">
+            <h1 class="catalogue-heading">SHOPPING CART</h1>  
         </section>
-       
+        <section class="shopping-cart">
+            <div class="shopping-cart__border">
+                <div class="cart-items">
+                    <img src="images/GameHub_covers9.jpg" alt="Cover Art Cyberpunk">
+                    <div class="item-information">
+                        <div class="information-line information-line_one">
+                            <h4>Cyberpunk 2048 - Playbox</h4>
+                            <p>Used - Cartrige and cover included</p>
+                        </div>
+                        <p class="information-line"><span>In stock</span> - Ships within 24 hours</p>
+                        <p class="information-line information-line_three">Qty 1 <img src="icons/Arrow_down.png" alt="Quantity button arrow"></p>
+                    </div>
+                    <h4 class="item-information_price">€ 45</h4>
+                </div>
+                <hr class="hr">
+                <div class="shipping-options">
+                    <div class="shipping-header">
+                        <img src="icons/Shipping.png" alt="Shipping icon">
+                        <h4>Shipping options</h4>
+                    </div>
+                    <div class="free-shipping">
+                        <div>
+                            <div class="option-checked">
+                                <img src="icons/Checked.png" alt="Option checked icon">
+                                <p>FREE shipping</p>
+                            </div>
+                            <p class="shipping-days">3-5 Days</p>
+                        </div>
+                        <h4 class="free-shipping_price">FREE</h4>
+                    </div>
+                    <div>
+                        <div class="option-unchecked">
+                            <img src="icons/Unchecked.png" alt="Option unchecked icon">
+                            <p>Express delivery<span>Check availability</span></p>
+                        </div>
+                        <p class="shipping-days">1-3 Days</p>
+                    </div>
+                    <div class="price-total">
+                        <div>
+                            <p>Products</p>
+                            <p>Shipping</p>
+                        </div>
+                        <div>
+                            <h4>€ 45</h4>
+                            <h4>€ 0</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="order-summary">
+                <h4>ORDER SUMMARY</h4>
+                <div class="order-line">
+                    <p>Products</p>
+                    <h4>€ 45</h4>
+                </div>
+                <div class="order-line">
+                    <p>Shipping</p>
+                    <h4>€ 0</h4>
+                    <hr class="hr">
+                </div>
+                <div class="order-line order-line_three">
+                    <p>TOTAL</p>
+                    <h4>€ 45</h4>
+                </div>
+                <a href="checkout.html" class="cart-cta cta-large">Checkout</a>
+                <img src="images/Cta_Paypal.png" alt="PayPal payment option button">
+            </div>
+        </section>
     </main>
     <footer>
         <Section class="newsletter">

@@ -798,10 +798,57 @@ footer a {
 /* Contact
 --------------------------------------------------------------------------------------------------- */
 
+.contact-header {
+    margin-top: 30px;
+}
+
+.contact_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 .contact  {
     border: solid;
     border-color: #E8E8E8;
     border-width: 0.5px;
+    padding: 30px 110px;
+    width: 405px;
+    margin: 20px 90px 30px 20px;
+}
+
+.contact__form {
+    display: grid;
+    grid-template-rows: 30px 30px 30px 30px 120px ;
+    grid-gap: 20px;
+}
+
+.contact__form input,
+.contact__form textarea {
+    border-radius: 6px;
+    border-color: #E8E8E8;
+    border-style: solid;
+    border-width: 0.7px;
+    font-family: 'Source Sans Pro', sans-serif, Verdana, Geneva, Tahoma;
+}
+
+.contact__form input {
+    height: 30px;
+}
+
+.contact__form textarea {
+    height: 120px;
+}
+
+.contact-cta {
+    margin: 25px auto 0px auto;
+    width: 207px;
+    height: 40px;
+}
+
+.contact_wrapper p {
+    font-size: 0.875em;
+    height: 100%;
+    
 }
 
 /* About Us

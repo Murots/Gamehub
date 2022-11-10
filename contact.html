@@ -26,7 +26,6 @@
         </section>
     </header>
     <main>
-        </Section>
         <section class="mapline">
             <p>You are here:</p>
             <div class="mapline__links">
@@ -36,35 +35,25 @@
             </div>
         </section>
         <hr class="hr">
-        </section class="contact">
-            <h1>CONTACT US</h1>
-            <p>Thank you for your inquiry. Please leave a message and we will reply as soon as possible. 
-                Your voice is important to us.</p>
-            <form action="submit.php" method="post">
-                <div class="form-wrapper">
-                    <section>
-                        <label for="name">Full name</label>
-                        <input type="text" name="name" id="name">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email">
-                        <label for="select-guitar">Guitar</label>
-                        <select name="guitar" id="select-guitar">
-                            <option value="adirondack-red">Adirondack Red</option>
-                            <option value="adirondack-blue">Adirondack Blue</option>
-                            <option value="adirondack-green">Adirondack Green</option>
-                        </select>
-                        <div>
-                            <input type="checkbox" name="email-updates" id="email-updates">
-                            <label for="email-updates">Sign up for email updates</label>
-                        </div>
+        <Section>
+            <h1 class="contact-header">CONTACT US</h1>
+            <p>Thank you for your inquiry. Please leave a message and we will reply as soon as possible. br Your voice is important to us.</p>
+        </Section>
+        <section class="contact_wrapper">
+            <div class="contact">
+                <form action="submit.php" method="post">
+                    <section class="contact__form">
+                        <input type="text" name="name" placeholder="Full name">
+                        <input type="email" name="email" placeholder="Email">
+                        <input type="number" name="phone number" placeholder="Phone number">
+                        <input type="text" name="subject" placeholder="Subject">
+                        <textarea name="textarea-message" name="message" placeholder="Your message" cols="25" rows="3"></textarea>
                     </section>
-                    <section>
-                        <label for="message">Message</label>
-                        <textarea name="textarea-message" id="message" cols="25" rows="3"></textarea>
-                    </section>
-                </div>
-                <input type="submit" value="Send Now" class="cta cta-large">
-            </form>
+                <input type="submit" value="Send Now" class="contact-cta cta cta-large">
+            </div>
+            <div>
+                <p>* Please note that our customer <br>service is closed during weekends</p>
+            </div>
         </section>
     </main>
     <footer>

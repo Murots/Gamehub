@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <Title>Gamhub | Shopping Cart</Title>
-    <meta name="description" content="This page highlights the items in your shoppingcart, aswell as costs and shipping options">
+    <Title>Gamhub | Payment</Title>
+    <meta name="description" content="On this page you can choose your payment option and confirm your purchase">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,56 +34,42 @@
             </div>
         </section>
         <hr class="hr">
-        <section class="cart-heading">
-            <img src="icons/Cart_pink.png" alt="Cart-icon">
-            <h1 class="catalogue-heading">SHOPPING CART</h1>  
+        <section class="payment-heading">
+            <img src="icons/Card_pink.png" alt="Cart-icon">
+            <h1 class="catalogue-heading">CHOOSE PAYMENT</h1>  
         </section>
-        <section class="shopping-cart">
-            <div class="shopping-cart__border">
-                <div class="cart-items">
-                    <img src="images/GameHub_covers9.jpg" alt="Cover Art Cyberpunk">
-                    <div class="item-information">
-                        <div class="information-line information-line_one">
-                            <h4>Cyberpunk 2048 - Playbox</h4>
-                            <p>Used - Cartrige and cover included</p>
-                        </div>
-                        <p class="information-line"><span>In stock</span> - Ships within 24 hours</p>
-                        <p class="information-line information-line_three">Qty 1 <img src="icons/Arrow_down.png" alt="Quantity button arrow"></p>
+        <section class="payment">
+            <div class="payment__border">
+                <div class="payment-options">
+                    <div class="payment__unchecked">
+                        <img src="icons/Unchecked.png" alt="Option unchecked icon">
+                        <p>Deffered Payment</p>
                     </div>
-                    <h4 class="item-information_price">€ 45</h4>
+                    <p class="payment-option_description">Buy now, pay in six months</p>
                 </div>
-                <hr class="hr">
-                <div class="shipping-options">
-                    <div class="shipping-header">
-                        <img src="icons/Shipping.png" alt="Shipping icon">
-                        <h4>Shipping options</h4>
+                <div class="payment-options">
+                    <div class="payment__unchecked">
+                        <img src="icons/Unchecked.png" alt="Option unchecked icon">
+                        <p>Partial Payment</p>
                     </div>
-                    <div class="free-shipping">
-                        <div>
-                            <div class="option-checked">
-                                <img src="icons/Checked.png" alt="Option checked icon">
-                                <p>FREE shipping</p>
-                            </div>
-                            <p class="shipping-days">3-5 Days</p>
-                        </div>
-                        <h4 class="free-shipping_price">FREE</h4>
+                    <p class="payment-option_description">Pay at your own pace</p>
+                </div>
+                <div class="payment-options">
+                    <div class="payment__checked">
+                        <img src="icons/Checked.png" alt="Option checked icon">
+                        <p>Credit Card</p>
                     </div>
-                    <div>
-                        <div class="option-unchecked">
-                            <img src="icons/Unchecked.png" alt="Option unchecked icon">
-                            <p>Express delivery<span>Check availability</span></p>
-                        </div>
-                        <p class="shipping-days">1-3 Days</p>
-                    </div>
-                    <div class="price-total">
-                        <div>
-                            <p>Products</p>
-                            <p>Shipping</p>
-                        </div>
-                        <div>
-                            <h4>€ 45</h4>
-                            <h4>€ 0</h4>
-                        </div>
+                    <form action="submit.php" method="post">
+                        <section class="card-details">
+                            <input type="text" name="card-number" placeholder="Card number" class="card-number">
+                            <input type="text" name="date-year" placeholder="MM/YY" class="date-year">
+                            <input type="text" name="cvc" placeholder="CVC/CVV" class="cvc">
+                        </section>
+                    </form>
+                    <div class="card-logos">
+                        <a href="https://www.americanexpress.com/"><img src="icons/AmEx.png" alt="A link to AmEx"></a>
+                        <a href="https://www.visa.ca/en_CA"><img src="icons/Visa.png" alt="A link to Visa"></a>
+                        <a href="https://www.mastercard.com/global/en.html"><img src="icons/Mastercard.png" alt="A link to Mastercard"></a>
                     </div>
                 </div>
             </div>
@@ -102,8 +88,7 @@
                     <p>TOTAL</p>
                     <h4>€ 45</h4>
                 </div>
-                <a href="payment.html" class="cart-cta cta-large">Checkout</a>
-                <a href="https://www.paypal.com/"><img src="images/Cta_Paypal.png" alt="PayPal payment option button"></a>
+                <a href="confirmation.html" class="cart-cta cta-large">Purchase<input type="submit" value="" class="cta-large"></a>
             </div>
         </section>
     </main>

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <Title>Gamhub | Contact Us</Title>
-    <meta name="description" content="This page lets the user send a message to contact company">
+    <Title>Gamhub | Confirmation</Title>
+    <meta name="description" content="This page confirmes your purchase">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,33 +26,18 @@
         </section>
     </header>
     <main>
-        <section class="mapline">
-            <p>You are here:</p>
-            <div class="mapline__links">
-                <a href="index.html">Homepage</a>
-                <img src="icons/Arrow.png" alt="Arrow-icon">
-                <a href="contact.html">Contact Us</a>
+        <section class="confirmation">
+            <div class="confirmation-heading">
+                <img src="icons/Check-mark.png" alt="Check-mark icon">
+                <h1 class="confirmation-h1">Congratulations on your purchase.</h1>
             </div>
-        </section>
-        <hr class="hr">
-        <Section>
-            <h1 class="contact-header">CONTACT US</h1>
-            <p>Thank you for your inquiry. Please leave a message and we will reply as soon as possible. br Your voice is important to us.</p>
-        </Section>
-        <section class="contact_wrapper">
-            <div class="contact">
-                <form action="submit.php" method="post">
-                    <section class="contact__form">
-                        <input type="text" name="name" placeholder="Full name">
-                        <input type="email" name="email" placeholder="Email">
-                        <input type="tel" name="phone-number" placeholder="Phone number">
-                        <input type="text" name="subject" placeholder="Subject">
-                        <textarea name="textarea-message" name="message" placeholder="Your message" cols="25" rows="3"></textarea>
-                    </section>
-                </form>
-                <input type="submit" value="Send Now" class="contact-cta cta cta-large">
+            <p class="thanks-p">You will immediately receive a confirmation email with all purchase details. <br>We thank you for shopping with us.</p>
+            <div class="order-details">
+                <p>Order number: 1234</p>
+                <p>Total: € 45</p>
+                <p>Payment: Credit Card</p>
             </div>
-            <p class="contact-note">* Please note that our customer <br>service is closed during weekends</p>
+            <a href="index.html" class="confirmation-cta">Continue Shopping</a>
         </section>
     </main>
     <footer>
@@ -62,9 +47,9 @@
                 <p>Sign up to our News letter to get  exclusive deals and playfull content.</p>
             </div>
             <div>
-                <form action="register.php" method="POST" class="newsletter__form">
+                <form action="submit.php" method="POST" class="newsletter__form">
                     <input type="email" name="email" id="email" placeholder="Your email address">
-                    <input type="register" value="Sign up" class="cta-large">
+                    <input type="submit" value="Sign up" class="cta-large">
                 </form>
             </div>
         </Section>

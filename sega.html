@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <Title>Gamhub | Contact Us</Title>
-    <meta name="description" content="This page lets the user send a message to contact company">
+    <Title>Gamhub | Sega</Title>
+    <meta name="description" content="This is a website selling video games">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,34 +26,25 @@
         </section>
     </header>
     <main>
+        <Section class="platforms">
+            <a href="nintendo.html">Nintendo</a>
+            <a href="playstation.html">Playstation</a>
+            <a href="playbox.html">Playbox</a>
+            <a href="sega.html">Sega</a>
+            <a href="dreamcast.html">Dreamcast</a>
+            <a href="pc.html">PC</a>
+        </Section>
+        <hr color="E1E1E1" size="0.5px" class="mapline-hrtop">
         <section class="mapline">
             <p>You are here:</p>
             <div class="mapline__links">
                 <a href="index.html">Homepage</a>
                 <img src="icons/Arrow.png" alt="Arrow-icon">
-                <a href="contact.html">Contact Us</a>
+                <a href="nintendo.html">Sega</a>
             </div>
         </section>
-        <hr class="hr">
-        <Section>
-            <h1 class="contact-header">CONTACT US</h1>
-            <p>Thank you for your inquiry. Please leave a message and we will reply as soon as possible. br Your voice is important to us.</p>
-        </Section>
-        <section class="contact_wrapper">
-            <div class="contact">
-                <form action="submit.php" method="post">
-                    <section class="contact__form">
-                        <input type="text" name="name" placeholder="Full name">
-                        <input type="email" name="email" placeholder="Email">
-                        <input type="tel" name="phone-number" placeholder="Phone number">
-                        <input type="text" name="subject" placeholder="Subject">
-                        <textarea name="textarea-message" name="message" placeholder="Your message" cols="25" rows="3"></textarea>
-                    </section>
-                </form>
-                <input type="submit" value="Send Now" class="contact-cta cta cta-large">
-            </div>
-            <p class="contact-note">* Please note that our customer <br>service is closed during weekends</p>
-        </section>
+        <hr color="#E1E1E1" size="0.5px">
+        <h1 class="no-games">NO GAMES CURRENTLY IN CATALOGUE</h1>
     </main>
     <footer>
         <Section class="newsletter">
@@ -62,9 +53,9 @@
                 <p>Sign up to our News letter to get  exclusive deals and playfull content.</p>
             </div>
             <div>
-                <form action="register.php" method="POST" class="newsletter__form">
+                <form action="submit.php" method="POST" class="newsletter__form">
                     <input type="email" name="email" id="email" placeholder="Your email address">
-                    <input type="register" value="Sign up" class="cta-large">
+                    <input type="submit" value="Sign up" class="cta-large">
                 </form>
             </div>
         </Section>

@@ -17,7 +17,7 @@ h5 {
 
 h1 {
     font-size: 1.5em;
-    color: #FC67B8;
+    color: #B82F7A;
     margin: 0;
 }
 
@@ -31,7 +31,7 @@ p {
 }
 
 .header {
-    background: linear-gradient(#5900A8, #FC67B8);
+    background: linear-gradient(#5900A8, #B82F7A);
 }
 
 .header__content {
@@ -96,7 +96,7 @@ nav {
 .navigation {
     position: fixed;
     top: 58px;
-    background-color: #FC67B8;
+    background-color: #B82F7A;
     z-index: 1000;
     left: 0px;
     height: 100%;
@@ -320,7 +320,7 @@ footer a {
     text-align: center;
     color: #1B203D;
     border-style: solid;
-    border-color: #FC67B8;
+    border-color: #B82F7A;
     border-radius: 25px;
     border-width: 3px;
     padding-top: 12px;
@@ -328,7 +328,7 @@ footer a {
 }
 
 .cta {
-    background-color: #FC67B8;
+    background-color: #B82F7A;
     color: #fff;
     text-align: center;
     grid-column: -1/1;
@@ -491,7 +491,7 @@ footer a {
     color: #45EDC9;
 }
 
-.featured h1 {
+.featured h3 {
     color: #fff;
     margin: 10px 0px 0px 10px;
 }
@@ -605,7 +605,7 @@ footer a {
 
 .selected-game {
    display: grid;
-   grid-template-columns: 1fr 1fr;
+   grid-template-columns: 1fr;
 }
 
 .selected-game__images {
@@ -712,7 +712,7 @@ footer a {
 .shopping-cart,
 .payment {
     display: flex;
-    flex: 1;
+    flex-direction: column;
 }
 
 .shopping-cart__border,
@@ -849,7 +849,7 @@ footer a {
 
 .order-line_three h4,
 .order-line_three p {
-    color: #FC67B8;
+    color: #B82F7A;
     font-weight: bold;
 }
 
@@ -1006,7 +1006,7 @@ footer a {
 .confirmation {
     margin-top: 130px;
     margin-bottom: 20px;
-    color: #FC67B8;
+    color: #B82F7A;
     height: 600px;
 }
 
@@ -1042,7 +1042,7 @@ footer a {
 
 .confirmation-cta {
     padding: 10px 30px;
-    background-color: #FC67B8;
+    background-color: #B82F7A;
     color: #fff;
     text-align: center;
     padding: 15px 50px;
@@ -1073,6 +1073,7 @@ footer a {
     .search-bar {
         display: inline;
         grid-column: 2;
+        margin-left: 20px;
     }
 
     .search-bar2 {
@@ -1145,6 +1146,12 @@ footer a {
 
 
 @media (min-width: 800px) {
+
+    main {
+        max-width: 1000px;
+        margin: auto;
+    }
+
     .game-selection {
         grid-template-columns: repeat(4, 1fr);
     }
@@ -1154,5 +1161,13 @@ footer a {
         max-height: 201px;
     }
 
+    .selected-game {
+        grid-template-columns: 1fr 1fr;
+    }
 
+    .shopping-cart,
+    .payment {
+        display: flex;
+        flex-direction: row;
+    }
 }

@@ -51,7 +51,7 @@ nav {
 }
 
 .search-field {
-    max-width: 466px;
+    max-width: 470px;
     width: 100%;
     height: 40px;
     border-radius: 25px;
@@ -61,11 +61,12 @@ nav {
 .search-bar i,
 .search-bar2 i {
     position: absolute;
-    margin-left: 430px;
+    /* margin-left: 430px; */
     margin-top: 7px;
     background-color: #45EDC9;
     border-radius: 50px;
     padding: 7px;   
+    right: 7px;
 }
 
 .search-bar i:hover,
@@ -76,6 +77,8 @@ nav {
 .search-bar2 {
     margin: 10px auto;
     text-align: center;
+    max-width: 400px;
+    position: relative;
 }
 
 .search-field2 {
@@ -127,11 +130,13 @@ main {
 
 .platforms {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    max-width: 960px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    max-width: 600px;
     margin: 20px auto 0px auto;
-    grid-gap: 30px;
+    grid-gap: 20px;
 }
+
 
 footer {
     background-color: #1B203D;
@@ -316,15 +321,15 @@ footer a {
 
 .platforms a {
     font-family: 'Ubuntu', sans-serif, Verdana, Geneva, Tahoma;
-    font-size: 1.15em;
+    font-size: 1em;
     text-align: center;
     color: #1B203D;
     border-style: solid;
     border-color: #B82F7A;
     border-radius: 25px;
     border-width: 3px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .cta {
@@ -1066,14 +1071,14 @@ footer a {
     }
 
     .logo img {
-        height: 171px;
-        margin-left: -15px;
+        height: 100px;
     }
 
     .search-bar {
         display: inline;
         grid-column: 2;
-        margin-left: 20px;
+        /* margin-left: 20px; */
+        position: relative;
     }
 
     .search-bar2 {
@@ -1169,5 +1174,24 @@ footer a {
     .payment {
         display: flex;
         flex-direction: row;
+    }
+
+    .platforms {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        max-width: 960px;
+        margin: 20px auto 0px auto;
+        grid-gap: 30px;
+    }
+
+    .platforms a {
+        font-size: 1.15em;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    .logo img {
+        height: 171px;
+        margin-left: -15px;
     }
 }

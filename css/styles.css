@@ -124,7 +124,7 @@ header label {
 
 main {
     max-width: 600px;
-    margin: auto;
+    margin: auto 5px;
     
 }
 
@@ -516,6 +516,7 @@ footer a {
     grid-template-columns: repeat(2, 1fr);
     max-width: 1000px;
     margin-top: 20px;
+    grid-gap: 10px;
 }
 
 .options__filters,
@@ -622,8 +623,7 @@ footer a {
 }
  
 .selected-game__details {
-    min-width: 460px;
-    margin: 50px 20px 20px 45px;
+    margin: 50px 20px 20px 20px;
 }
 
 .selected-game__details h3 {
@@ -654,8 +654,8 @@ footer a {
 
 .details_decision {
     display: grid;
-    margin-top: 70px;
-    grid-template-columns: 1fr 1fr;
+    margin: 50px 0px;
+    grid-template-columns: 1fr;
     align-items: center;
     grid-gap: 45px;
 }
@@ -722,11 +722,7 @@ footer a {
 
 .shopping-cart__border,
 .payment__border {
-    margin: 30px 20px 50px 20px;
-    padding: 20px;
-    border-style: solid;
-    border-color: #E8E8E8;
-    border-width: 0.5px;
+    margin: 20px 0px;
 }
 
 .shopping-cart img {
@@ -735,13 +731,14 @@ footer a {
 
 .cart-items {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
 }
 
 .item-information {
     display: grid;
     grid-template-rows: repeat(3, 1fr); 
-    margin-left: 45px;
+    margin-left: 30px;
+    margin-top: 10px;
     width: 230px;
 }
 
@@ -787,7 +784,6 @@ footer a {
 .option-unchecked {
     margin-left: 10px;
     margin-top: 0px;
-    width: 300px;
 }
 
 .option-unchecked span {
@@ -834,7 +830,8 @@ footer a {
     grid-template-rows: repeat(6, 1fr);
     justify-items: start;
     height: 225px;
-    margin: 30px 20px 0px 70px;
+    margin: 60px auto 70px 40px;
+    max-width: 207px;
 }
 
 .order-summary div {
@@ -932,16 +929,16 @@ footer a {
 
 .contact_wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
 }
 
 .contact  {
     border: solid;
     border-color: #E8E8E8;
     border-width: 0.5px;
-    padding: 30px 110px;
-    width: 405px;
-    margin: 20px 90px 30px 20px;
+    padding: 30px 20px;
+    max-width: 405px;
+    margin: 20px auto 30px auto;
 }
 
 .contact__form {
@@ -968,7 +965,7 @@ footer a {
 }
 
 .contact-cta {
-    margin: 25px auto 0px 25%; 
+    margin: 25px; 
     width: 207px;
     height: 40px;
 }
@@ -1057,6 +1054,40 @@ footer a {
 
 /* Media queries
 --------------------------------------------------------------------------------------------------- */
+
+@media (min-width: 500px) {
+    .contact  {
+        padding: 30px 110px;
+    }
+
+    .option-checked,
+    .option-unchecked {
+    width: 300px;
+    }
+
+    .cart-items {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .item-information {
+        margin-left: 45px;
+        margin-top: 0px;
+    }
+
+    .shopping-cart__border,
+    .payment__border {
+    margin: 30px 20px 50px 20px;
+    padding: 20px;
+    border-style: solid;
+    border-color: #E8E8E8;
+    border-width: 0.5px;
+    }
+
+    .order-summary {
+        margin: 0px 20px 70px 70px;
+    }
+}
+
 
 @media (min-width: 600px) {
 
@@ -1151,6 +1182,19 @@ footer a {
     .support nav {
         margin-right: 50px;
     }
+
+    .contact  {
+        margin: 20px 90px 30px 20px;
+    }
+
+    .selected-game__details {
+        min-width: 460px;
+    }
+
+    .details_decision {
+        margin: 70px 0px 0px 0px;
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 
@@ -1214,6 +1258,17 @@ footer a {
         margin: 50px 0px 50px 100px;
     }
 
+    .contact-cta {
+        margin: 25px auto 0px 25%; 
+    }
+
+    .selected-game__details {
+        margin: 50px 20px 20px 45px;
+    }
+
+    .order-summary {
+        margin: 30px 20px 0px 70px;
+    }
 }
 
 
@@ -1222,5 +1277,13 @@ footer a {
     .header__content {
         display: grid;
         grid-template-columns: 26% 48% 26%;
+    }
+
+    .contact_wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contact  {
+        width: 405px;
     }
 }

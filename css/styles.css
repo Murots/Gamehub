@@ -186,7 +186,7 @@ footer p {
 
 .support {
     display: grid;
-    grid-template-columns: 1fr, 1fr;
+    grid-template-columns: 1fr 1fr;
     max-width: 1000px;
     margin: 50px auto;
 }
@@ -863,12 +863,8 @@ footer a {
 }
 
 .payment-options {
-    width: 620px;
-    border: solid;
-    border-color: #E8E8E8;
-    border-width: 0.5px;
-    margin: 20px 50px;
-    padding: 15px 20px 15px 20px;
+    margin: 20px 0px;
+    padding: 0px 0px 15px 0px;
 }
 
 .payment__unchecked p,
@@ -1076,7 +1072,7 @@ footer a {
 
     .shopping-cart__border,
     .payment__border {
-    margin: 30px 20px 50px 20px;
+    margin: 30px 10px 50px 20px;
     padding: 20px;
     border-style: solid;
     border-color: #E8E8E8;
@@ -1161,10 +1157,6 @@ footer a {
         margin: 25px 0px 0px 10px;
     }
 
-    .connect {
-        margin-left: 50px;
-    }
-
     .game-selection {
         grid-template-columns: 1fr 1fr;
     }
@@ -1222,6 +1214,7 @@ footer a {
     .payment {
         display: flex;
         flex-direction: row;
+        margin: 10px;
     }
 
     .nav-account,
@@ -1267,7 +1260,7 @@ footer a {
     }
 
     .order-summary {
-        margin: 30px 20px 0px 70px;
+        margin: 30px 0px 0px 105px;
     }
 }
 
@@ -1286,4 +1279,16 @@ footer a {
     .contact  {
         width: 405px;
     }
+}
+
+@media (min-width: 1000px) {
+
+    .payment-options {
+        border: solid;
+        border-color: #E8E8E8;
+        border-width: 0.5px;
+        margin: 20px 50px;
+        padding: 15px 20px 15px 20px;
+    }
+   
 }

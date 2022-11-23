@@ -231,6 +231,10 @@ footer p {
     background-color: #E8E8E8;
 }
 
+.white {
+    background-color: #fff;
+}
+
 .mapline-hrtop {
     margin-top: 20px;
     max-width: 1000px;

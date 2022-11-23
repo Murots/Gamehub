@@ -554,6 +554,15 @@ footer a {
     margin-bottom: 0px;
 }
 
+.old-price {
+    text-decoration: line-through;
+    color: #7E7E7E;
+}
+
+.new-price {
+    color: #ff0000; 
+}
+
 .specific__price {
     text-align: right;
     margin-right: -23px;

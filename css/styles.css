@@ -52,7 +52,7 @@ nav {
 
 .search-field {
     max-width: 470px;
-    width: 100%;
+    width: 94%;
     height: 40px;
     border-radius: 25px;
     border-style: none;
@@ -66,7 +66,7 @@ nav {
     background-color: #45EDC9;
     border-radius: 50px;
     padding: 7px;   
-    right: 7px;
+    right: 15px;
 }
 
 .search-bar i:hover,
@@ -82,8 +82,8 @@ nav {
 }
 
 .search-field2 {
-    max-width: 466px;
-    width: 100%;
+    max-width: 470px;
+    width: 94%;
     height: 40px;
     border-radius: 25px;
     border-style: solid;
@@ -276,7 +276,6 @@ span {
 
 .logo img {
     height: 54px;
-    padding-right: 20px;
 }
 
 a {
@@ -381,9 +380,7 @@ footer a {
     background-position-x: center;
     scroll-snap-align: start;
     scroll-behavior: smooth;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    width: 100%;
 }
 
 .slide-one {
@@ -400,7 +397,7 @@ footer a {
     content: "";
     position: absolute;
     top: 0px;
-    right: -1000px;
+    right: -100%;
     bottom: 0px;
     left: 0px;
     margin-bottom: 5px;
@@ -408,10 +405,9 @@ footer a {
 }
 
 .slider h2 {
-    font-size: 2.2em;
+    font-size: 1.2em;
     position: relative;
     color: #fff;
-    width: 300px;
 }
 
 .slider a {
@@ -423,28 +419,16 @@ footer a {
     border-radius: 25px;
 }
 
-.slide-one h2 {
-    grid-column: 1;
-    grid-row: 4;
-    margin: 40px 0px 0px 22px;
-}
-
+.slide-one h2,
 .slide-two h2 {
-    grid-column: 1;
-    grid-row: 4;
-    margin: 40px 0px 0px 22px;
+    margin-left: 37px;
+    margin-top: 200px;
 }
 
-.slide-one a {
-    grid-column: 4;
-    grid-row: 4;
-    margin: 35px 0px 20px 0px;
-}
-
+.slide-one a,
 .slide-two a {
-    grid-column: 4;
-    grid-row: 4;
-    margin: 35px 0px 20px 0px;
+    margin-left: 20px;
+    margin-top: 200px;
 }
 
 .slider::-webkit-scrollbar {
@@ -879,9 +863,8 @@ footer a {
 
 .card-details {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    margin: 20px 29px 5px 29px;
+    grid-template-rows: repeat(3, 1fr);
+    margin: 20px 0px 5px 29px;
 }
 
 .card-number,
@@ -895,19 +878,16 @@ footer a {
 
 .card-number {
     grid-row: 1;
-    grid-column: -1/1;
     border-radius: 6px 6px 0px 0px;
 }
 
 .date-year {
-    grid-column: 1;
     grid-row: 2;
     border-radius: 0px 0px 0px 6px;
 }
 
 .cvc {
-    grid-column: 2;
-    grid-row: 2;
+    grid-row: 3;
     border-radius: 0px 0px 6px 0px;
 }
 
@@ -1002,24 +982,28 @@ footer a {
 --------------------------------------------------------------------------------------------------- */
 
 .confirmation {
-    margin-top: 130px;
+    margin-top: 80px;
     margin-bottom: 20px;
     color: #B82F7A;
     height: 600px;
+    position: relative;
 }
 
 .confirmation-heading {
     display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 10px;
 }
+   
 
 .confirmation-h1 {
-    font-size: 2.5em;
+    font-size: 2em;
+    text-align: center;
 }
 
 .thanks-p {
-    font-size: 1.5em;
+    font-size: 1.2em;
     text-align: center;
 }
 
@@ -1044,7 +1028,9 @@ footer a {
     color: #fff;
     text-align: center;
     padding: 15px 50px;
-    margin-left: 260px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 
@@ -1070,8 +1056,7 @@ footer a {
         margin-top: 0px;
     }
 
-    .shopping-cart__border,
-    .payment__border {
+    .shopping-cart__border {
     margin: 30px 10px 50px 20px;
     padding: 20px;
     border-style: solid;
@@ -1082,8 +1067,28 @@ footer a {
     .order-summary {
         margin: 0px 20px 70px 70px;
     }
-}
 
+    .card-details {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin: 20px 29px 5px 29px;
+    }
+
+    .card-number {
+    grid-column: -1/1;
+    }
+
+    .date-year {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .cvc {
+        grid-column: 2;
+        grid-row: 2;
+    }
+}
 
 @media (min-width: 600px) {
 
@@ -1187,6 +1192,51 @@ footer a {
         margin: 70px 0px 0px 0px;
         grid-template-columns: 1fr 1fr;
     }
+
+    .slide-one,
+    .slide-two {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .slide-one h2,
+    .slide-two h2 {
+        grid-column: 1;
+        grid-row: 4;
+        left: 20px;
+        bottom: -30px;
+        margin: 0px;
+        height: 50px;
+    }
+    
+    .slide-one a,
+    .slide-two a {
+        grid-column: 4;
+        grid-row: 4;
+        right: 20px;
+        bottom: -21px;
+        margin-left: 0;
+        margin: 0px;
+    }
+
+    .confirmation-h1 {
+        font-size: 2.5em;
+    }
+
+    .thanks-p {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .confirmation-heading {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .confirmation-h1 {
+        text-align: left;
+    }     
 }
 
 
@@ -1262,6 +1312,10 @@ footer a {
     .order-summary {
         margin: 30px 0px 0px 105px;
     }
+
+    .slider h2 {
+        font-size: 1.4em;
+    }
 }
 
 
@@ -1279,6 +1333,23 @@ footer a {
     .contact  {
         width: 405px;
     }
+
+    .payment__border {
+        margin: 30px 10px 50px 20px;
+        padding: 20px;
+        border-style: solid;
+        border-color: #E8E8E8;
+        border-width: 0.5px;
+    }
+
+    .slider h2 {
+        font-size: 1.5em;
+    }
+
+    .slide-one a,
+    .slide-two a {
+        right: 10px;
+    }
 }
 
 @media (min-width: 1000px) {
@@ -1290,5 +1361,13 @@ footer a {
         margin: 20px 50px;
         padding: 15px 20px 15px 20px;
     }
-   
+
+    .slider h2 {
+        font-size: 1.8em;
+    }
+    
+    .slide-one a,
+    .slide-two a {
+        right: 0px;
+    }
 }

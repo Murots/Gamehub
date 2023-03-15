@@ -1,0 +1,83 @@
+/* Links
+-------------------------------------------------------------------------------------------------- */
+
+.logo {
+    grid-column: 3;
+    text-align: right;
+}
+
+.logo img {
+    height: 54px;
+}
+
+a {
+    text-decoration: none;
+}
+
+header nav a {
+    font-size: 1em;
+    color: #fff;
+}
+
+.nav-account {
+    background: url(../icons/Account.png);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.nav-wishlist {
+    background: url(../icons/Hearth.png);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.nav-cart {
+    background: url(../icons/Cart.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    text-align: left;
+}
+
+.nav-account,
+.nav-wishlist,
+.nav-cart {
+    padding: 22px 40px;
+    margin: 20px 70px 0px 20px;
+}
+
+footer a {
+    font-size: 1em;
+    color: #fff;
+}
+
+.platforms a {
+    font-family: 'Ubuntu', sans-serif, Verdana, Geneva, Tahoma;
+    font-size: 1em;
+    text-align: center;
+    color: #1B203D;
+    border-style: solid;
+    border-color: #B82F7A;
+    border-radius: 25px;
+    border-width: 3px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.cta {
+    background-color: #B82F7A;
+    color: #fff;
+    text-align: center;
+    grid-column: -1/1;
+    margin-left: -23px;
+    margin-right: -23px;
+    padding: 10px 0px;
+}
+
+.cta-large {
+    background-color: #45EDC9;
+    border-style: none;
+    font-size: 1em;
+    max-height: 40px;
+    font-weight: bold;
+    color: #1B203D;
+}

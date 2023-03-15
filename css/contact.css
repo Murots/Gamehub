@@ -1,0 +1,50 @@
+/* Contact
+--------------------------------------------------------------------------------------------------- */
+
+.contact-header {
+    margin-top: 30px;
+}
+
+.contact_wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.contact  {
+    max-width: 405px;
+    margin: 20px auto 30px auto;
+}
+
+.contact__form {
+    display: grid;
+    grid-template-rows: 30px 30px 30px 30px 120px ;
+    grid-gap: 20px;
+}
+
+.contact__form input,
+.contact__form textarea {
+    border-radius: 6px;
+    border-color: #E8E8E8;
+    border-style: solid;
+    border-width: 0.7px;
+    font-family: 'Source Sans Pro', sans-serif, Verdana, Geneva, Tahoma;
+}
+
+.contact__form input {
+    height: 30px;
+}
+
+.contact__form textarea {
+    height: 120px;
+}
+
+.contact-cta {
+    margin: 25px; 
+    width: 207px;
+    height: 40px;
+}
+
+.contact-note {
+    font-size: 0.875em;
+    margin: auto 0px 60px 0px; 
+}

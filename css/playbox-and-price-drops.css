@@ -1,0 +1,106 @@
+/* Playbox  (and Price Drops)
+--------------------------------------------------------------------------------------------------- */
+
+.options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1000px;
+    margin-top: 20px;
+    grid-gap: 10px;
+}
+
+.options__filters,
+.options__sort {
+    display: flex; 
+    color: #1B203D;
+    font-size: 0.9em;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #5900A8;
+    padding: 5px;
+    max-width: 156px;
+}
+
+.options__sort {
+    justify-self: end;
+    width: 156px;
+}
+.options p {
+    margin: 0px 0px 0px 10px;
+}
+
+.game-selection {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    grid-gap: 35px;
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+.game-selection__specific {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 43px 35px 10px 35px;
+    border-style: solid;
+    border-color: #E8E8E8;
+    border-width: 0.5px;
+    background-image: url(../icons/Hearth_gray.png);
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: 3%;
+}
+
+.game-selection__specific img {
+    max-width: 100%;
+    grid-column: -1/1;
+}
+
+.game-selection__specific h4 {
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #7E7E7E;
+}
+
+.new-price {
+    color: #ff0000; 
+}
+
+.specific__price {
+    text-align: right;
+    margin-right: -23px;
+}
+
+.specific__title {
+    margin-left: -23px;
+    width: 120px;
+}
+
+.game-selection p {
+    color: #7E7E7E;
+    margin: 5px 0px 20px -23px;
+}
+
+.page-view {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1000px;
+    color: #E8E8E8;
+    margin-bottom: 20px;
+}
+
+.pv-count {
+    text-align: center;
+    color: #1B203D;
+}
+
+.pv-next {
+    text-align: right;
+}
+
+.hidden {
+    visibility: hidden;
+}

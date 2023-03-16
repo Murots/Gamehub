@@ -12,13 +12,15 @@
 
 .contact  {
     max-width: 405px;
+    width: 90%;
     margin: 20px auto 30px auto;
+    display: grid;
 }
 
 .contact__form {
     display: grid;
     grid-template-rows: 30px 30px 30px 30px 120px ;
-    grid-gap: 20px;
+    grid-gap: 40px;
 }
 
 .contact__form input,
@@ -32,19 +34,29 @@
 
 .contact__form input {
     height: 30px;
+    width: 100%;
 }
 
 .contact__form textarea {
     height: 120px;
+    width: 100%;
 }
 
 .contact-cta {
     margin: 25px; 
     width: 207px;
     height: 40px;
+    justify-self: center;
 }
 
 .contact-note {
     font-size: 0.875em;
     margin: auto 0px 60px 0px; 
 }
+
+.form-error {
+    color: #bd0000;
+    display: none;
+}
+
+

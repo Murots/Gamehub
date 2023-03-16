@@ -71,6 +71,7 @@ footer a {
     margin-left: -23px;
     margin-right: -23px;
     padding: 10px 0px;
+    cursor: pointer;
 }
 
 .cta-large {
@@ -80,4 +81,5 @@ footer a {
     max-height: 40px;
     font-weight: bold;
     color: #1B203D;
+    cursor: pointer;
 }

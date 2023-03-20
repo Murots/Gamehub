@@ -9,8 +9,9 @@ const formMessage = document.querySelector("#message");
 const formMessageError = document.querySelector("#message-error");
 const email = document.querySelector("#email");
 const emailError = document.querySelector("#email-error");
+const guide = document.querySelector(".contact-guide");
 
-function validateForm() {
+function validateForm(event) {
     event.preventDefault();
 
     if (checkLength(firstName.value, 0) === true) {
@@ -41,6 +42,16 @@ function validateForm() {
         emailError.style.display = "none";
     } else {
         emailError.style.display = "block";
+    }
+
+    if (checkLength(firstName.value, 0) && checkLength(lastName.value, 3) && checkLength(subject.value, 9) && checkLength(formMessage.value, 19) && validateEmail(email.value)) {
+        firstName.value = "";
+        lastName.value = "";
+        subject.value = "";
+        formMessage.value = "";
+        email.value = "";
+
+        guide.innerHTML = `<p class="success">Thank you for your request. We will answer you as soon as possible.</p>`;
     }
 
 }

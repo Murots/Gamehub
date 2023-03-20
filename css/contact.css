@@ -59,4 +59,13 @@
     display: none;
 }
 
+.success {
+    background-color: #c6f7c6;
+    padding: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #008000;
+    max-width: 500px;
+}
+
 

@@ -53,7 +53,6 @@ function validateForm(event) {
 
         guide.innerHTML = `<p class="success">Thank you for your request. We will answer you as soon as possible.</p>`;
     }
-
 }
 
 form.addEventListener("submit", validateForm);

@@ -37,7 +37,7 @@
             <nav class="navigation">
                 <a href="account.html" class="nav-account">Account</a>
                 <a href="wishlist.html" class="nav-wishlist">Wishlist</a>
-                <a href="cart.html" class="nav-cart">Cart<span id="cart-badge" class="badge">1</span></a>
+                <a href="cart.html" class="nav-cart">Cart<span id="cart-badge" class="badge"></span></a>
             </nav>
         </section>
     </header>
@@ -68,7 +68,13 @@
                             <p>Used - Cartrige and cover included</p>
                         </div>
                         <p class="information-line"><span>In stock</span> - Ships within 24 hours</p>
-                        <p class="information-line information-line_three">Qty 1 <img src="icons/Arrow_down.png" alt="Quantity button arrow"></p>
+                        <!-- <p class="information-line information-line_three">Qty 1 <img src="icons/Arrow_down.png" alt="Quantity button arrow"></p> -->
+                        <div class="quantity-container information-line">
+                            <p>Qty</p>
+                            <button id="qty-down" class="qty-button"><img src="icons/Arrow_left.png" alt="Decrease item quantity"></button>
+                            <p class="qty-count"></p>
+                            <button id="qty-up" class="qty-button"><img src="icons/Arrow.png" alt="Increase item quatity"></button>
+                        </div>
                     </div>
                     <h4 class="item-information_price">€ 45</h4>
                 </div>
@@ -164,5 +170,6 @@
         </section>
     </footer>
     <script src="js/components/badgeCounter.js"></script>
+    <script src="js/cart.js"></script>
 </body>
 </html>

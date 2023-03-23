@@ -58,3 +58,11 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.confirmation-cta:hover {
+    outline: 2px solid #6d1f4a;
+}
+
+.confirmation-cta:active {
+    background-color: #6d1f4a;
+}

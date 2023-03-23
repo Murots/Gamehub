@@ -78,6 +78,15 @@ footer a {
     padding-bottom: 10px;
 }
 
+.platforms a:hover {
+    background-color: #e0a2c3;
+    font-weight: bolder;
+}
+
+.platforms a:active {
+    background-color: #B82F7A;
+}
+
 .cta {
     background-color: #B82F7A;
     color: #fff;
@@ -89,6 +98,7 @@ footer a {
     cursor: pointer;
 }
 
+
 .cta-large {
     background-color: #45EDC9;
     border-style: none;
@@ -97,4 +107,21 @@ footer a {
     font-weight: bold;
     color: #1B203D;
     cursor: pointer;
+}
+
+.cta-large:hover {
+    outline: 2px solid #1a977c;
+}
+   
+
+.cta-large:active {
+    background-color: #1a977c;
+}
+
+.cta:hover {
+    outline: 2px solid #6d1f4a;
+}
+
+.cta:active {
+    background-color: #6d1f4a;
 }

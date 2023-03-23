@@ -138,6 +138,10 @@
     margin: 10px 0px 0px 10px;
 }
 
+.featured a:hover {
+    font-size: 1.1em;
+}
+
 .featured p {
     font-size: 1em;
     color: #45EDC9;

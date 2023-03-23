@@ -98,9 +98,13 @@
 
 .option-unchecked span {
     margin-left: 20px;
-    text-decoration: underline;
+    text-decoration: line-through;
     color: #1B203D;
     font-weight: 100;
+}
+
+.option-unchecked p {
+    color: #bdbdbd;
 }
 
 .option-checked p,
@@ -238,5 +242,8 @@
 
 .qty-count {
     height: 42px;
-   
+}
+
+.quantityPriceAdjust {
+    margin: 0px;
 }

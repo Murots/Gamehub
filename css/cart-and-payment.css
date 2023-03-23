@@ -98,8 +98,7 @@
 
 .option-unchecked span {
     margin-left: 20px;
-    text-decoration: line-through;
-    color: #1B203D;
+    color: #bdbdbd;
     font-weight: 100;
 }
 
@@ -124,6 +123,7 @@
 
 .shipping-days {
     margin: 0px 0px 0px 35px;
+    color: #bdbdbd;
 }
 
 .price-total {
@@ -187,8 +187,13 @@
     margin: 0px 0px 00px 5px;
 }
 
+.payment__unchecked p {
+    color: #bdbdbd;
+}
+
 .payment-option_description {
     margin: 5px 0px 0px 28px;
+    color: #bdbdbd;
 }
 
 .card-details {

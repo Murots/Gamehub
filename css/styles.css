@@ -157,7 +157,8 @@ footer {
     margin: 20px auto 50px auto;
 }
 
-.newsletter__form input {
+.newsletter__form input,
+.newsletter__form button {
     height: 35px;
     margin: 5px;
 }
@@ -279,4 +280,9 @@ span {
     border-width: 1px;
     border-color: #008000;
     max-width: 500px;
+}
+
+.newsletter-error {
+    color: #bd0000;
+    display: none;
 }

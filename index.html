@@ -90,9 +90,11 @@
                 <p>Sign up to our News letter to get  exclusive deals and playfull content.</p>
             </div>
             <div>
-                <form action="submit.php" method="POST" class="newsletter__form">
-                    <input type="email" name="email" id="email" placeholder="Your email address">
-                    <input type="submit" value="Sign up" class="cta-large">
+                <form action="submit.php" method="POST" class="newsletter__form" id="newsletter-form">
+                    <input name="email" id="newsletter-email" placeholder="Your email address">
+                    <div class="newsletter-error" id="newsletter-error">Please enter a valid email address</div>
+                    <button type="submit" class="cta cta-large">Sign Up</button>
+                    <!-- <input type="submit" value="Sign up" class="cta-large"> -->
                 </form>
             </div>
         </Section>
@@ -120,6 +122,7 @@
         </section>
     </footer>
     <script src="js/components/badgeCounter.js"></script>
+    <script src="js/components/newsletter.js"></script>
 </body>
 </html>
 

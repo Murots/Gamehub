@@ -65,6 +65,14 @@ footer a {
     color: #fff;
 }
 
+.support li {
+    margin-bottom: 10px;
+}
+
+.support li:hover {
+    text-decoration: underline;
+}
+
 .platforms a {
     font-family: 'Ubuntu', sans-serif, Verdana, Geneva, Tahoma;
     font-size: 1em;

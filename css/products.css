@@ -73,7 +73,12 @@
      padding: 10px 20px;
      border-style: solid;
      border-color: #E8E8E8;
+     cursor: pointer;
  }
+
+ .selected-game_thumbnails div:hover {
+    border-color: #b82f7a;
+}
  
  .heading-viewed {
      margin-top: 50px;

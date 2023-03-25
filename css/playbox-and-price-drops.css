@@ -37,6 +37,11 @@
     margin: 50px auto;
 }
 
+.game-selection a:hover {
+    border-color: #b82f7a;
+    box-shadow: 0 0 10px 5px rgba(145, 43, 99, 0.3);
+}
+
 .game-selection__specific {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -44,15 +49,24 @@
     border-style: solid;
     border-color: #E8E8E8;
     border-width: 0.5px;
-    background-image: url(../icons/Hearth_gray.png);
-    background-repeat: no-repeat;
-    background-position-x: 95%;
-    background-position-y: 3%;
+    position: relative;
 }
 
 .game-selection__specific img {
     max-width: 100%;
     grid-column: -1/1;
+}
+
+.hearth-icon {
+    position: absolute;
+    top: 10px;
+    right: -25px;
+    width: 23px;
+    height: 23px;
+}
+
+.hearth-icon:hover {
+    filter: invert(35%) sepia(81%) saturate(4410%) hue-rotate(328deg) brightness(95%) contrast(109%);
 }
 
 .game-selection__specific h4 {
@@ -88,7 +102,6 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     max-width: 1000px;
-    color: #E8E8E8;
     margin-bottom: 20px;
 }
 
@@ -101,6 +114,12 @@
     text-align: right;
 }
 
+.pv-next,
+.pv-previous {
+    color: #bdbdbd;
+}
+
 .hidden {
     visibility: hidden;
 }
+

@@ -61,7 +61,6 @@ nav {
 .search-bar i,
 .search-bar2 i {
     position: absolute;
-    /* margin-left: 430px; */
     margin-top: 7px;
     background-color: #45EDC9;
     border-radius: 50px;
@@ -155,6 +154,28 @@ footer {
     padding: 20px;
     background-color: #fff;
     margin: 20px auto 50px auto;
+}
+
+.newsletter__feedback {
+    max-width: 400px;
+    padding: 20px;
+    margin: 60px 0px 50px auto;
+    background-color: #c6f7c6;
+    border-color: #008000;
+    border-style: solid;
+    border-width: 3px;
+    text-align: center;
+    display: none;
+}
+
+.newsletter__feedback p {
+    color: #1B203D;
+}
+
+.newsletter-error {
+    color: #bd0000;
+    display: none;
+    padding: 0px 0px 10px 5px;
 }
 
 .newsletter__form input,
@@ -277,12 +298,7 @@ span {
     background-color: #c6f7c6;
     padding: 20px;
     border-style: solid;
-    border-width: 1px;
+    border-width: 2px;
     border-color: #008000;
     max-width: 500px;
-}
-
-.newsletter-error {
-    color: #bd0000;
-    display: none;
 }

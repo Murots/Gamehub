@@ -70,7 +70,7 @@
                             <p>Used - Cartrige and cover included</p>
                         </div>
                         <p class="information-line"><span>In stock</span> - Ships within 24 hours</p>
-                        <!-- <p class="information-line information-line_three">Qty 1 <img src="icons/Arrow_down.png" alt="Quantity button arrow"></p> -->
+
                         <div class="quantity-container information-line">
                             <p>Qty</p>
                             <button id="qty-down" class="qty-button"><img src="icons/Arrow_left.png" alt="Decrease item quantity"></button>
@@ -143,6 +143,7 @@
             </div>
             <div>
                 <form action="submit.php" method="POST" class="newsletter__form" id="newsletter-form">
+                    <label for="newsletter-email" aria-label="Enter subscription email"></label>
                     <input name="email" id="newsletter-email" placeholder="Your email address">
                     <div class="newsletter-error" id="newsletter-error">Please enter a valid email address</div>
                     <button type="submit" class="cta cta-large">Sign Up</button>

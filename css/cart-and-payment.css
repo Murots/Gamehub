@@ -252,3 +252,7 @@
 .quantityPriceAdjust {
     margin: 0px;
 }
+
+.cart-cta span {
+    display: none;
+}

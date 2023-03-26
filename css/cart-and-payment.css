@@ -60,7 +60,7 @@
 
 .information-line_one p  {
     font-family: 'Ubuntu', sans-serif, Verdana, Geneva, Tahoma;
-    color: #7E7E7E;
+    color: #757575;
     font-size: 0.875em;
     margin-top: 5px;
 }
@@ -98,12 +98,12 @@
 
 .option-unchecked span {
     margin-left: 20px;
-    color: #bdbdbd;
+    color: #757575;
     font-weight: 100;
 }
 
 .option-unchecked p {
-    color: #bdbdbd;
+    color: #757575;
 }
 
 .option-checked p,
@@ -123,7 +123,7 @@
 
 .shipping-days {
     margin: 0px 0px 0px 35px;
-    color: #bdbdbd;
+    color: #757575;
 }
 
 .price-total {
@@ -135,7 +135,7 @@
 .free-shipping_price {
     width: 100%;
     text-align: right;
-    color: #ff0000;
+    color: #bd0000;
     margin: 20px 0px 0px 0px;
 }
 
@@ -188,12 +188,12 @@
 }
 
 .payment__unchecked p {
-    color: #bdbdbd;
+    color: #757575;
 }
 
 .payment-option_description {
     margin: 5px 0px 0px 28px;
-    color: #bdbdbd;
+    color: #757575;
 }
 
 .card-details {

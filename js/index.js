@@ -6,13 +6,11 @@ for (let i = 0; i < sliderDots.length; i++) {
     
     dot.addEventListener('click', function() {
 
-    // Scroll the slider to the corresponding slide
     slider.scroll({
         left: i * slider.offsetWidth,
         behavior: 'smooth'
     });
 
-    // Update the active dot
     for (let i = 0; i < sliderDots.length; i++) {
         const otherDot = sliderDots[i];
         otherDot.classList.remove('active');

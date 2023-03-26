@@ -83,9 +83,14 @@
                     </div>
                     <form action="submit.php" method="post">
                         <section class="card-details">
-                            <input type="text" name="card-number" placeholder="Card number" class="card-number">
-                            <input type="text" name="date-year" placeholder="MM/YY" class="date-year">
-                            <input type="text" name="cvc" placeholder="CVC/CVV" class="cvc">
+                            <label for="card-number" aria-label="Enter card number"></label>
+                            <input type="text" name="card-number" id="card-number" placeholder="Card number" class="card-number">
+
+                            <label for="date-year" aria-label="Enter date and year"></label>
+                            <input type="text" name="date-year" id="date-year" placeholder="MM/YY" class="date-year">
+
+                            <label for="cvc" aria-label="Enter cvc"></label>
+                            <input type="text" name="cvc" id="cvc" placeholder="CVC/CVV" class="cvc">
                         </section>
                     </form>
                     <div class="card-logos">

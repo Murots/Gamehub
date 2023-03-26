@@ -1,98 +1,6 @@
 /* Home Page
 --------------------------------------------------------------------------------------------------- */
 
-/* .slider-heading {
-    margin-top: 30px;
-}
-
-.slider {
-    max-width: 1000px;
-    max-height: 454px;
-    margin-top: 10px;
-    display: flex;
-    overflow-x: auto;
-    position: relative;
-    -webkit-overflow-scrolling: touch;
-    scroll-snap-type: x mandatory;  
-}
-
-.slide-one,
-.slide-two {
-    max-width: 1000px;
-    flex-shrink: 0;
-    height: 425px;
-    margin-bottom: 5px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-x: center;
-    scroll-snap-align: start;
-    scroll-behavior: smooth;
-    width: 100%;
-}
-
-.slide-one {
-    background-image: url(../images/GameHub_covers9.jpg);
-    background-position-y: 27%;
-}
-
-.slide-two {
-    background-image: url(../images/GameHub_covers10.jpg);
-    background-position-y: 44%;
-}
-
-.slider::before {
-    content: "";
-    position: absolute;
-    top: 0px;
-    right: -100%;
-    bottom: 0px;
-    left: 0px;
-    margin-bottom: 5px;
-    background-color: rgba(0,0,0,0.33);
-}
-
-.slider h2 {
-    font-size: 1.2em;
-    position: relative;
-    color: #fff;
-}
-
-.slider a {
-    position: relative;
-    background-color: #45EDC9;
-    height: 20px;
-    width: 85px;
-    padding: 12px 60px;
-    border-radius: 25px;
-}
-
-.slide-one h2,
-.slide-two h2 {
-    margin-left: 37px;
-    margin-top: 200px;
-}
-
-.slide-one a,
-.slide-two a {
-    margin-left: 20px;
-    margin-top: 200px;
-}
-
-.slider::-webkit-scrollbar {
-    height: 10px;
-}
-
-.slider::-webkit-scrollbar-track {
-    background: #E8E8E8; 
-    border-radius: 10px;
-    margin-top: 5px;
-  }
-
-.slider::-webkit-scrollbar-thumb {
-    background-color: #7E7E7E;
-    border-radius: 10px;
-} */
-
 .slider-heading {
     margin-top: 30px;
   }
@@ -194,7 +102,7 @@
   .slider-dot.active {
     background-color: #333;
   }
-  
+
 
 .featured {
     display: grid;

@@ -1,7 +1,7 @@
 /* Home Page
 --------------------------------------------------------------------------------------------------- */
 
-.slider-heading {
+/* .slider-heading {
     margin-top: 30px;
 }
 
@@ -91,7 +91,117 @@
 .slider::-webkit-scrollbar-thumb {
     background-color: #7E7E7E;
     border-radius: 10px;
-}
+} */
+
+.slider-heading {
+    margin-top: 30px;
+  }
+  
+  .slider {
+    max-width: 1000px;
+    max-height: 454px;
+    margin-top: 10px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    height: 425px;
+  }
+  
+  .slide-one,
+  .slide-two {
+    max-width: 1000px;
+    flex-shrink: 0;
+    height: 425px;
+    margin-bottom: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    scroll-snap-align: start;
+    scroll-behavior: smooth;
+    width: 100%;
+  }
+  
+  .slide-one {
+    background-image: url(../images/GameHub_covers9.jpg);
+    background-position-y: 27%;
+  }
+  
+  .slide-two {
+    background-image: url(../images/GameHub_covers10.jpg);
+    background-position-y: 44%;
+  }
+  
+  .slider::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: -100%;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.33);
+  }
+  
+  .slider h2 {
+    font-size: 1.2em;
+    position: relative;
+    color: #fff;
+  }
+  
+  .slider a {
+    position: relative;
+    background-color: #45EDC9;
+    height: 20px;
+    width: 85px;
+    padding: 12px 60px;
+    border-radius: 25px;
+  }
+  
+  .slide-one h2,
+  .slide-two h2 {
+    margin-left: 37px;
+    margin-top: 200px;
+  }
+  
+  .slide-one a,
+  .slide-two a {
+    margin-left: 20px;
+    margin-top: 200px;
+  }
+  
+  .slider-menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    z-index: 2;
+    bottom: -15px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  
+  .slider-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  
+  .slider-dot.active {
+    background-color: #333;
+  }
+
+
+
+
+
+
+
+
 
 .featured {
     display: grid;

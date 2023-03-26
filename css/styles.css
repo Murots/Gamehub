@@ -114,6 +114,12 @@ nav {
     grid-column: 1;
 }
 
+label[for="hamburger-menu"] {
+    position: absolute;
+    left: -9999px;
+    visibility: hidden;
+}
+
 header label {
     padding-left: 20px;
 }

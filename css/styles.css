@@ -238,6 +238,10 @@ footer p {
     margin-right: 20px;
 }
 
+.support p {
+    font-size: 1.2em;
+}
+
 .copyright p {
     max-width: 1000px;
     margin: auto;

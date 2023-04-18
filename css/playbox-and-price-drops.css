@@ -1,5 +1,8 @@
 /* Playbox  (and Price Drops)
 --------------------------------------------------------------------------------------------------- */
+.playbox-container {
+    min-height: 300px;
+}
 
 .game-selection {
     display: grid;

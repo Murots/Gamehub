@@ -1,3 +1,6 @@
+const container = document.querySelector(".playbox-container");
+container.classList.add("game-selection");
+
 const apiBase = "http://gamehub-products-api.local";
 const woocommerceBase = "/wp-json/wc/store";
 const productBase = "/products";
@@ -8,13 +11,10 @@ async function getProducts() {
     const response = await fetch(fullProductURL);
     const products = await response.json();
     console.log(products);
-    return products
+    return products 
 }
 
 function createProductHTML(product) {
-    const container = document.querySelector(".playbox-container");
-    container.classList.add("game-selection");
-
     const productContainer = document.createElement("a");
     productContainer.classList.add("game-selection__specific");
     productContainer.id = product.id;
@@ -80,20 +80,15 @@ function createProductsHTML(products) {
 }
 
 async function main() {
-    const products = await getProducts();
-    createProductsHTML(products);
+    try {
+        const products = await getProducts();
+        container.innerHTML = "";
+        createProductsHTML(products);
+    } catch (error) {
+        console.error(error);
+        container.innerHTML = errorMessage("Could not fetch data. Please try again later.");
+    }
 }
 
-main()
 
-// <!-- <section class="game-selection">
-//             <a href="products/boxer.html" class="game-selection__specific">
-//                 <img src="images/GameHub_covers8.jpg" alt="Cover art Boxer">
-//                 <img class="hearth-icon" src="icons/Hearth_gray.png" alt="Hearth icon" id="hearth-icon">
-//                 <div>
-//                     <h4 class="specific__title">Boxer</h4>
-//                     <p>Playbox</p>
-//                 </div>
-//                 <h4 class="specific__price">€ 39</h4>
-//                 <div class="cta">More</div>
-//             </a>
+main()

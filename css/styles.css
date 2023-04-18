@@ -310,3 +310,34 @@ span {
     border-color: #008000;
     max-width: 500px;
 }
+
+.error {
+    border: 2px solid #810000;
+    padding: 20px;
+    color: #810000;
+    background: #8f28284d;
+    font-size: 1.2em;
+    grid-column: 1 / -1;
+    height: fit-content;
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid darkslategray;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

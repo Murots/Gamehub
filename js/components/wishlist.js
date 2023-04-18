@@ -12,6 +12,6 @@ function toggleHeart(event) {
   }
 }
 
-for (let i = 0; i < heartIcons.length; i++) {
-    heartIcons[i].addEventListener('click', toggleHeart);
-}
+// for (let i = 0; i < heartIcons.length; i++) {
+//     heartIcons[i].addEventListener('click', toggleHeart);
+// }

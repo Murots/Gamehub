@@ -11,13 +11,15 @@ async function getProducts() {
     const response = await fetch(fullProductURL);
     const products = await response.json();
     console.log(products);
-    return products 
+    return products;
 }
 
 function createProductHTML(product) {
+    const productId = product.id;
     const productContainer = document.createElement("a");
     productContainer.classList.add("game-selection__specific");
-    productContainer.id = product.id;
+    // productContainer.id = product.id;
+    productContainer.href = "products.html?id=" + productId;
 
     for (let i = 0; i < product.images.length; i++) {
         const imgData = product.images[i];

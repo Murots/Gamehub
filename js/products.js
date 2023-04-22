@@ -45,6 +45,10 @@ function createProductDetailsHTML(productDetails) {
     productShape.innerText = returnedShapeString.textContent;
     textDetailsContainer.append(productShape);
 
+    const detailsHrOne = document.createElement("hr");
+    detailsHrOne.className = ("hr");
+    textDetailsContainer.append(detailsHrOne);
+
     const productDescription = document.createElement("p");
     const returnedDescriptionString = document.createElement("div");
     returnedDescriptionString.innerHTML = productDetails.description;
@@ -58,6 +62,10 @@ function createProductDetailsHTML(productDetails) {
     });
     productGenre.innerText = "Genre: " + categoryNames.join(", ");
     textDetailsContainer.append(productGenre);
+
+    const detailsHrTwo = document.createElement("hr");
+    detailsHrTwo.className = ("hr");
+    textDetailsContainer.append(detailsHrTwo);
 
     const productDecision = document.createElement("div");
     productDecision.className = ("details_decision");
@@ -76,8 +84,26 @@ function createProductDetailsHTML(productDetails) {
     } else {
         productPrice.innerText = euroSymbol + " " + (salePrice / 100);
     }
-    
+
     productDecisionLeft.append(productPrice);
+
+    const productStock = document.createElement("p");
+    productStock.innerText = "In stock - Ships within 24 hours";
+    productDecisionLeft.append(productStock);
+
+    // const decisionCtaButton = document.createElement("a");
+    // decisionCtaButton.innerText = "Add to cart";
+    // decisionCtaButton.classList.add("details_cta", "cta-large");
+    // decisionCtaButton.id = "add-to-cart-button";
+    // productDecision.append(decisionCtaButton);
+
+    const decisionCtaButton = document.querySelector(".details_cta")
+    productDecision.append(decisionCtaButton);
+
+    const addToCartfeedback = document.createElement("p");
+    addToCartfeedback.className = "add-to-cart-feedback";
+    productDecision.append(addToCartfeedback);
+    
 
 }
 

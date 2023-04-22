@@ -30,8 +30,3 @@ function addItemToCart() {
 
 addToCartButton.addEventListener("click", addItemToCart);
 
-
-
-
-
-

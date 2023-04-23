@@ -56,6 +56,7 @@
         grid-column: 2;
         grid-row: 2;
     }
+
 }
 
 @media (min-width: 600px) {
@@ -137,11 +138,6 @@
     .game-selection {
         grid-template-columns: 1fr 1fr;
     }
-/* 
-    .game-selection__specific img {
-        width: 100%;
-        max-height: 350px;
-    } */
 
     .connect {
         max-width: 250px;
@@ -168,16 +164,16 @@
     .slide-one,
     .slide-two {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(4, auto);
         grid-template-rows: repeat(4, 1fr);
     }
 
     .slide-one h2,
     .slide-two h2 {
         grid-column: 1;
-        grid-row: 4;
+        grid-row: 1;
         left: 20px;
-        bottom: -30px;
+        bottom: -45px;
         margin: 0px;
         height: 50px;
     }
@@ -187,9 +183,13 @@
         grid-column: 4;
         grid-row: 4;
         right: 20px;
-        bottom: -21px;
+        bottom: -35px;
         margin-left: 0;
         margin: 0px;
+    }
+
+    .slider h2 {
+        font-size: 1em;
     }
 
     .confirmation-h1 {
@@ -222,11 +222,6 @@
     .game-selection {
         grid-template-columns: repeat(4, 1fr);
     }
-
-    /* .game-selection__specific img {
-        width: 100%;
-        max-height: 201px;
-    } */
 
     .selected-game {
         grid-template-columns: 1fr 1fr;
@@ -285,8 +280,13 @@
         margin: 30px 0px 0px 105px;
     }
 
+    .slide-one h2,
+    .slide-two h2 {
+        grid-row: 4;
+    }
+
     .slider h2 {
-        font-size: 1.4em;
+        font-size: 2em;
     }
 
 }
@@ -315,13 +315,8 @@
         border-width: 0.5px;
     }
 
-    .slider h2 {
-        font-size: 1.5em;
-    }
-
-    .slide-one a,
-    .slide-two a {
-        right: 10px;
+    .featured-cta {
+        right: 20px;
     }
 
     .featured h3 {
@@ -343,13 +338,8 @@
         margin: 20px 50px;
         padding: 15px 20px 15px 20px;
     }
-
-    .slider h2 {
-        font-size: 1.8em;
-    }
     
-    .slide-one a,
-    .slide-two a {
-        right: 0px;
+    .featured-cta {
+        right: 20px;
     }
 }

@@ -33,13 +33,7 @@
   }
   
   .slide-one {
-    background-image: url(../images/GameHub_covers9.jpg);
-    background-position-y: 27%;
-  }
-  
-  .slide-two {
-    background-image: url(../images/GameHub_covers10.jpg);
-    background-position-y: 44%;
+    background-position-y: 30%;
   }
   
   .slider::before {
@@ -73,9 +67,8 @@
     margin-top: 200px;
   }
   
-  .slide-one a,
-  .slide-two a {
-    margin-left: 20px;
+  .slide-one a {
+    margin-left: 40px;
     margin-top: 200px;
   }
   
@@ -159,4 +152,9 @@
     color: #45EDC9;
     margin: 0px 0px 0px 10px;
     bottom: 60%;
+}
+
+.featured-cta {
+  justify-self: end;
+  right: 20px;
 }

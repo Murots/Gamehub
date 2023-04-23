@@ -1,3 +1,5 @@
+const selectedProductContainer = document.querySelector(".selected-game");
+
 const apiBase = "http://gamehub-products-api.local";
 const woocommerceBase = "/wp-json/wc/store";
 const productBase = "/products/";
@@ -7,10 +9,6 @@ const fullProductURL = apiBase + woocommerceBase + productBase;
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const productId = params.get("id");
-
-const title = document.querySelector("title");
-// heading.innerHTML = nameId;
-title.innerHTML = "Gamehub | " + productId;
 
 const specificProductURL = apiBase + woocommerceBase + productBase + productId;
 
@@ -23,8 +21,7 @@ async function getProductDetails() {
 }
 
 function createProductDetailsHTML(productDetails) {
-    const selectedProductContainer = document.querySelector(".selected-game");
-
+    
     const productImage = document.createElement("img");
     productImage.classList.add("selected-game__img");
     productImage.src = productDetails.images[0].src;
@@ -91,29 +88,29 @@ function createProductDetailsHTML(productDetails) {
     productStock.innerText = "In stock - Ships within 24 hours";
     productDecisionLeft.append(productStock);
 
-    // const decisionCtaButton = document.createElement("a");
-    // decisionCtaButton.innerText = "Add to cart";
-    // decisionCtaButton.classList.add("details_cta", "cta-large");
-    // decisionCtaButton.id = "add-to-cart-button";
-    // productDecision.append(decisionCtaButton);
-
-    const decisionCtaButton = document.querySelector(".details_cta")
+    const decisionCtaButton = document.querySelector(".detailsCtaButton");
+    decisionCtaButton.classList.add("details_cta", "cta-large");
+    decisionCtaButton.innerText = "Add to cart";
     productDecision.append(decisionCtaButton);
 
-    const addToCartfeedback = document.createElement("p");
-    addToCartfeedback.className = "add-to-cart-feedback";
+    const addToCartfeedback = document.querySelector(".add-to-cart-feedback");
     productDecision.append(addToCartfeedback);
-    
 
 }
 
 async function main() {
-    const productDetails = await getProductDetails();
-    createProductDetailsHTML(productDetails);
+    try {
+        const productDetails = await getProductDetails();
+        const title = document.querySelector("title");
+        title.innerHTML = "Gamehub | " + productDetails.name;
+        createProductDetailsHTML(productDetails);
+        const loaderDiv = document.querySelector(".loader");
+        loaderDiv.remove();
+    } catch (error) {
+        console.error(error);
+        selectedProductContainer.innerHTML = errorMessage("Could not fetch data. Please try again later.");
+    }
 }
 
 main();
-
-
-
 

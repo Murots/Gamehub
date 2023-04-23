@@ -4,6 +4,7 @@
 .selected-game {
     display: grid;
     grid-template-columns: 1fr;
+    min-height: 300px;
  }
  
  .selected-game__img {
@@ -80,5 +81,10 @@
  
  .heading-viewed {
      margin-top: 50px;
+ }
+
+ .add-to-cart-feedback {
+    width: 100%;
+    grid-column: 1/-1;
  }
 

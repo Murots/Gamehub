@@ -12,7 +12,6 @@ const productId = params.get("id");
 
 const specificProductURL = apiBase + woocommerceBase + productBase + productId;
 
-
 async function getProductDetails() {
     const response =  await fetch(specificProductURL);
     const productDetails = await response.json();
@@ -21,6 +20,9 @@ async function getProductDetails() {
 }
 
 function createProductDetailsHTML(productDetails) {
+
+    const productMapline = document.querySelector(".product-mapline");
+    productMapline.innerText = productDetails.name;
     
     const productImage = document.createElement("img");
     productImage.classList.add("selected-game__img");

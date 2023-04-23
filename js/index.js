@@ -1,3 +1,5 @@
+const slider = document.querySelector('.slider');
+
 const apiBase = "http://gamehub-products-api.local";
 const woocommerceBase = "/wp-json/wc/store";
 const productBase = "/products";
@@ -15,7 +17,6 @@ async function getFeaturedProducts() {
 
 
 function createFeaturedProductHTML(featuredProduct) {
-    const slider = document.querySelector('.slider');
 
     const slide = document.createElement("div");
     const featuredProductImage = featuredProduct.images[0].src;
@@ -66,13 +67,17 @@ function createFeaturedProductsHTML(featuredProducts) {
 }
 
 async function main() {
-    const featuredProducts = await getFeaturedProducts();
-    createFeaturedProductsHTML(featuredProducts);
+    try {
+        const featuredProducts = await getFeaturedProducts();
+        slider.innerHTML = "";
+        createFeaturedProductsHTML(featuredProducts);
+    } catch (error) {
+        console.error(error);
+        slider.innerHTML = errorMessage("Could not fetch data. Please try again later.");
+    }
 }
 
 main();
-
-
 
 
 

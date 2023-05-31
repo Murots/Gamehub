@@ -1,6 +1,6 @@
 const slider = document.querySelector('.slider');
 
-const apiBase = "http://gamehub-products-api.local";
+const apiBase = "https://gamehub.murots.no";
 const woocommerceBase = "/wp-json/wc/store";
 const productBase = "/products";
 const featuredBase = "?featured=true";

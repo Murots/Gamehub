@@ -1,7 +1,7 @@
 const container = document.querySelector(".playbox-container");
 container.classList.add("game-selection");
 
-const apiBase = "http://gamehub-products-api.local";
+const apiBase = "https://gamehub.murots.no";
 const woocommerceBase = "/wp-json/wc/store";
 const productBase = "/products";
 
